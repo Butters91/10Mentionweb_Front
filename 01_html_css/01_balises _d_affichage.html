@@ -13,6 +13,37 @@
         <!-- Cette balise meta avec la valeur author de l'attribut name spécifie l'auteur de la page.
             Elle peut etre utilisée pour indiquer qui a crée le contenu de la page.
          -->
+         <style>
+            /* style dans la balise head */
+
+            body {
+
+                background-color:  lightgray;
+            } 
+
+            h2 {
+                color: brown;
+            }
+
+            h3 {
+                background-color: pink;
+                
+            }
+            
+            h3 {
+                background-color: pink;
+            }
+
+            
+            
+           
+
+
+
+         </style>
+
+         
+         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     
         <title>Balise de texte et CSS</title>
 </head>
@@ -56,7 +87,51 @@
       <h6>Titre de niveau 6</h6>
 
 
-      <hr>  <!---->
+      <hr>  <!--hr horizontal ruel ()-->
+         
+      <!-- 
+        La balise <p> en HTML est utilisée pour définir un paragraphe de texte. Elle indique au navigateur web que le texte à l'intérieur de la balise doit être interprété comme un paragraphe distinct. 
+        Les paragraphes sont des éléments de type bloc
+        On ne doit pas mettre un paragraphe dans un paragraphe 
+    -->
+
+
+      <p>Ceci est un paragraphe, il ' n'a qu'une seule phrase....</p>
+      <p>Et là un second paragraphe.</p>
+      <p>
+        Un paragraphe 
+        sur 
+        plusieurs 
+        ligne dans le code
+      </p>
+
+      <hr>
+
+      <h2> Le CSS : Cascading style sheet</h2>
+      <p>Le CSS permet de faire du style sur nos page html</p>
+      <!--
+        3 façon pour déclarer le style :
+        - style en ligne 
+        - style dans la balise < style > directement dans la partie head ( l'en-tete )
+        - déclarer le style dans un fichier .css : feuille de style 
+      -->
+      <h3>Le CSS dans labalise </h3>
+      <p>La première facon de faire du style dans un élément est de déclarer l'atribut style sur celui-la. Ce n'est 
+        la meilleur manière de faire </p>
+
+        <p style="color:green; font-weight: bolder;">Je suis un paragraphe stylééééé !</p>
+
+        <h3>Le CSS dans l'en-tete</h3>
+        <p>Une seonde façon de faire du style sur notre page est de mettre la balise style dans la partie.
+        Cette méthode n'est toujour pas la plus conseillée mais elle permet plus de choses que la méthode balise 
+    en ligne on peut désormais grace acette méthode viser plusieur élément d'un coup. Exemple on met du gris en fond sur le corps de la plage le h2 en rouge et le h3 avec fond rose</p>
+
+
+    <h3>Le CSS dzns une feuille de style extrene </h3>
+
+    <p>La dernière façon et meilleur façon pour faire du style est la suivante on crée un dossier css avec un fichier style.css à l'inteérieur il faudra alors lier nos deux fichier grace à la balise link. On pourra alors faire du style sur les élément qui se trouvent dans notre page. Exemple, on décalarer que tous les paragraphes doivent etre en bleu </p>
+
+
       
 
 </body>

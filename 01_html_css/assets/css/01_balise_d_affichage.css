@@ -1,0 +1,26 @@
+/* commentaire en CSS */
+/* feuille de style  */
+
+/*  Syntaxe du langage de dévelopement CSS */
+
+/* 
+
+selecteur {
+    propriété: valeur ;
+..}
+
+ */
+ 
+p {
+    color: blue ;
+ }
+
+
+ /* 
+    Les valeurs possibles pour les couleurs:
+        ->Notation hexadecimale : #ffffff (blanc)
+        ->notation hexadecimale courte : #fff
+        ->notation rgb(255, 255, 255) -> rouge vert bleu
+        ->notation rgba(255,255,255,0) -> le dernier chiffre correspond à l'opacité : entre 0 (transparent) et 1 (opaque)
+        -notation avec mots clés -> red, green, bleu ... 
+*/
