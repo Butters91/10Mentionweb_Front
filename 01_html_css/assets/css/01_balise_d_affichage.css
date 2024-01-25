@@ -24,3 +24,10 @@ p {
         ->notation rgba(255,255,255,0) -> le dernier chiffre correspond à l'opacité : entre 0 (transparent) et 1 (opaque)
         -notation avec mots clés -> red, green, bleu ... 
 */
+
+
+/* Je sélectionne deux élément au meme temps avec virgule (,) */
+
+span {
+    color: green;
+}
