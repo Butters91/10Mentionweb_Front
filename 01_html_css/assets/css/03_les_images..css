@@ -1,0 +1,78 @@
+body{
+    background-color: black; 
+    /* la couleur de fond du corps de la page  */
+    text-align: center;
+}
+
+h1 {
+    color: cadetblue;
+    /* la couleur du texte des balises h1 h1 en codetbleu */
+    text-transform: uppercase; 
+    /* transforme le texte des balises en majuscules */
+
+}
+
+h2 {
+    color: antiquewhite;
+      font-style: italic;
+      /* donne un style italique au texte */
+}
+img {
+    width: 500px;
+    /* Définit la largeur des images à 500 pixel */
+    height: 500px;
+    border-style: solid;
+    /* Définit le style de la bordure comment étant solide */
+    border-width: 5px;
+    /* Définit la largeur de la bordure à 5px */
+    border-color: azure;/* Définit la couleur de la bordure */
+    /* Il existe un style alternative pour définir le style. de largeur et la couleur de la bordure 
+    en une seule ligne  */
+    border: groove 10px azure;
+    border-radius: 5%;
+    /* Arrondit les coins de l'image avec un rayon de 5% */
+    margin-right: 50px;
+    /* Ajoute une marge à droite de l'image de 50px. Cela crée de l'espace entre l'image et d'autre 
+    éléments voisin sur le cotés droit */
+
+    /* 
+    La propriété CSS margin est utilisée pour définir l'espace autour d'un élément. Elle contrôle l'espace entre les bords 
+    de l'élément et les éléments voisins. Elle peut prendre jusqu'à quatre valeurs  qui définissent l'espace autour de l'élément 
+    dans l'ordre suivant : haut, droite, bas, gauche.La sytaxe est =>  margin: top right bottom left;
+    
+    - margin: 10px;  marge de 10 pixels sur tous les côtés 
+    - margin: 10px 20px; marge de 10 pixels en haut/bas, 20 pixels à gauche/droite 
+    - margin: 10px 20px 30px; marge de 10 pixels en haut, 20 pixels à gauche/droite, 30 pixels en bas 
+    - margin: 10px 20px 30px 40px; marge de 10 pixels en haut, 20 pixels à droite, 30 pixels en bas, 40 pixels à gauche 
+    */
+}
+
+figcaption p {
+    color: aliceblue;
+}
+
+div {
+    
+    background-image: url(../img/chien-Husky-assis-sur-herbe.jpg);
+    /* définit de fond  */
+    height: 1000px;
+    background-repeat: no-repeat;
+    /* Empeche la répétion de l'image de fond  */
+    background-size: cover;
+    /* ajuster la taille de l'image de fond pour couvrir l'ensemble de l'élément */
+   
+    padding: 50px;
+    /* ajoute une marge interne ( espace inteérieur de 50px à l'élément */
+    margin: 50px;
+    /* ajoute une marge externe ( espace inteérieur de 50px à l'élément */
+
+
+}
+
+div p {
+
+    background-color: rgba(5, 19, 21, .6);
+    padding: 57px;
+    border-radius: 30px;
+
+}
