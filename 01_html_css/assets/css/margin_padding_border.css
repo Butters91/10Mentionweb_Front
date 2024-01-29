@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: red;
+}
+
+/* feuille de style pour la margin - padding - border */
+
+div{
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    background-color: pink;
+    /* L'ajout de bordure augment la taille tola de l'élément  */
+    border: 20px solid black;
+    /* L'ajout de padding augment également la taille totale de l'élément */
+    padding: 30px;
+    box-sizing: border-box;
+
+
+
+}
+
+/* 
+    La propriété  padding est utilisée pour définir l'espace entre le contenu d'un élément et ses bords intérieurs. 
+    Elle permet d'ajouter de l'espace à l'intérieur de la boîte d'un élément
+    La sytaxe est =>  padding: top right bottom left;
+
+*/
+/*  Lorsque nous déclarons les propriétés border et padding pour un élément, ces valeurs affectent
+   la taille globale de cet élément => La largeur ou la hauteur que nous spécifions pour l'élément est influencée par
+   les bordures et l'espace interne. 
+*/
+
+/*  
+    Afin déviter la modification de la taille totale d'un élément par les bordures et les marge internes, on utilise la propriété 
+    box-sizing avec la  valeur "border-box", cela permet d'inclure à la fois les bordures et le padding dans la taille totale de 
+    lélément.
+
+    La propriété box-sizing en CSS permet de définir comment la taille totale d'un élément est calculée.
+    Elle peut avoir deux valeus: 
+        - content-box : valeur par défaut, la largeur et la hauteur définies pour un élément ne tiennent compte que du contenu
+         réel à l'intérieur de l'élément.
+        - border-box : Avec cette valeur, la largeur et la hauteur définies pour un élément incluent à la fois le contenu, 
+        les bordures et le padding
+    
+    En générale en définie la propriété box-sizing: avec la valeur border-box pour l'ensemble du document en utilisant le sélécteur universel 
+    (*) => tout les éléments de la page utilisent le modèle de boîte border-box par défaut
+*/

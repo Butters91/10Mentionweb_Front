@@ -76,3 +76,35 @@ div p {
     border-radius: 30px;
 
 }
+
+/*  style pour la classe nomée "imageCheval" */
+.imageCheval{
+    /* la propriété transition permet de spécifier une transition animée entre les états d'un élément */
+    
+    transform: 1s;
+
+}
+
+.imageCheval:hover {
+    /* La propriété transforme avec la fonction scale(), permet de modifier l'echelle d'un élément en modifiant sa taille.
+    La fonction scale'() prend un argument, qui facteur d'echelle */
+
+    transform: scale(1.1); 
+    /* agrandir l'élément à 100% de sa taille d'origine */
+
+}
+
+/* style pour la classe nomée "imageDauphin */
+
+.imageDauphin{
+
+    display: block;
+    margin: 10px;
+}
+
+.imageDauphin:hover {
+    transform: rotate(-10deg);
+    outline: 2px dashed;
+    /* Fait tourner l'image de -10deg l'orsqu'elle est survolée */
+}
+

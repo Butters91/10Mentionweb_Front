@@ -1,0 +1,62 @@
+/*  Feuille de style pour la page : background-image */
+body{
+    background-color: brown;
+}
+
+div {
+    height: 800px;
+    width: 800px;
+    background-color: black;
+    /*  Avec la propriété background-image,défaut l'image se répéte sur l'élément afin de le couvrir */
+    background-image: url(../img/10_mention_web_logo.jpg);
+    background-repeat: no-repeat; 
+    /* **********************
+    
+    Permet de spécifier si une image de fond doit etre répétée dans la oite d'un élément, et que dans quel sens
+    elle doit l'etre.
+    Les valeurs de cette prpriété:display:
+    - repeat : c'est la valeur par défaut.
+    - repeat-x l'image de fond est répétée uniquement horizontalement
+    - repeat-y : l'image de fond est répétée uniquement verticalement 
+    - no-repeat : l'aimage de fond n'est pas répétée et est affichée une seule fois
+    *************************/
+    background-size: cover;
+    /************
+        permet de définir la taille d'une image de fond par rapport à la boîte de l'élément pour contrôler la manière dont une image de fond est dimensionnée par rapport à celle-ci.
+        Il existe plusieurs façons de définir la valeur de background-size
+            - auto : valeurpar défaut, l'image de fond est affichée à sa taille d'origine.
+            - contain : L'image de fond est redimensionnée de manière à ce qu'elle tienne entièrement dans la boîte de l'élément sans déformer ses proportions.  Cela peut entraîner des espaces vides dans la boîte si l'image a un rapport d'aspect différent de celle de la boîte.
+            - cover : L'image de fond est redimensionnée de manière à ce qu'elle couvre entièrement la boîte de l'élément.Cela peut entraîner un recadrage de l'image si ses proportions diffèrent de celles de la boîte.
+            - Deux valeurs  : pour définir la largeur et la hauteur individuellement : largeur x hauteur.
+    
+    **************/
+    background-position: center;
+    /*************
+        permet de définir la position initiale d'une image de fond à l'intérieur de la boîte d'un élément, elle spécifie les coordonnées où le coin supérieur gauche de l'image de fond doit être positionné par rapport à la boîte de l'élément parent.
+        Il existe deux façon pour définir la valeur de ba
+        ckground-position : 
+            - syntaxe : valeurX valeurY ( l'axe horizontal et l'axe vertical )
+            - avec un mot-clé prédéfini : top, right, bottom, left, center
+
+    **************/
+    background-attachment: fixed;
+    /* overflow-y: auto; */
+    /*************
+        permet de définir si l'image de fond d'un élément doit défiler avec le contenu de la page ou rester fixe par rapport à la fenêtre du navigateur.
+        Trois valeurs possible : 
+            - scroll :  valeur par défaut, l'image de fond défile avec le contenu de la page.
+            - fixed :  l'image de fond reste fixe par rapport à la fenêtre du navigateur.
+            - local : l'image de fond défile avec le contenu de l'élément au lieu de la page entière. cette propriété et utilisée avec la propriété overflow-y  sur l'élément avec l'image de fond afin de permettre le défilement horizontale dans l'élément.
+
+    **************/
+    /*
+        La propriété  background est une propriété raccourcie qui permet de définir plusieurs propriétés liées à l'arrière-plan d'un élément en une seule déclaration, les propriétés : 
+            - background-color, background-image, background-repeat, background-attachment, background-position
+    
+    
+    
+    */
+    
+
+
+}
