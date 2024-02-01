@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="Les balises de mise en page">
-    <link rel="stylesheet" href="assets/css/04_les_balises_de_mise_en_page.css">
+    <link rel="stylesheet" href="assets/css/04_les_balises_de_mise_en_page copy.css">
     <title>Les balises mise en page</title>
 </head>
 <body>
 
-    <div class="navigation">
+    <nav> <!-- La balise <nav> est utilisée pour définir une section de navigation sur une page web.Son role principal est 
+        est d'indiquer que le contenu inclus à l'intérieur de cette balise est une navigation, comme des liens vers d'autre 
+        page ou section de la meme page.-->
         <h1>Les balises de mise en page</h1>
         <a href="">Lien 1</a>
         <a href="">Lien 2</a>
         <a href="">Lien 3</a>
-    </div>
+    </nav> <!--Fin de la balise <nav>-->
 
-    <div class="main">
-        <div class="section1">
+        <main> <!--La balise <main> est utilisée pour définir le contenu principal d'une page.Elle encapsule le contenu
+            central, de pied de page ou d'autre contenus périphérique. L'utilisation de la balise <main> contribue à 
+            améliorer la sémantique de la page en indiquant clairement la section principale ou ycentrale du contenu.
+            
+            Cela facilite l'organisation structurelle du document et améliore l'accessibilité en fournissant aux 
+            moteurs de recherche une indication claire de la partie principale de la page.-->
+
+        <section> <!--La balise <section> est utilisée pour définir une section thématique ou une partie d'une page web. Elle
+            est souvent utilisée pour regrouper des contenus liés, facillitant ainsi la structurration et la compréhension 
+            du document.
+        
+            l'utilisation de la balise <section> contribue à améliorer la sémantique de la page en indiquant qu'un ensemble
+            spécifique de contenus est lié par un thème ou un objectif commun. Cela peut inclure des articles, des 
+            chapitre, des groupes de fonctionalités, ou toutbautre regroupement logique.-->
+
             <h2>HTML</h2>
             <img src="assets/img/jackson-sophat-_t-l5FFH8VA-unsplash.jpg" alt="Symbole d'une balise">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure labore nobis assumenda sint commodi 
@@ -28,9 +43,13 @@
             quaerat! Ullam, laborum adipisci quasi quas odio, dolor cupiditate consequatur officia facilis pariatur nulla. 
             Tenetur reiciendis est quis similique.
             </p>
-        </div>
-        <!-- .section2>h2+p*3-->
-        <div class="section2">
+             </section> <!--Fin de <section>-->
+
+        <article> <!--La balise <article> est utilisée pour définir un contenu indépendant, autonome et pouvant etre 
+                réutilisé. Un élément <article> peut encapsuler du texte, des image, des vidéo des commentaire, ou 
+                ou d'autre types de contenus. Il est destiné à etre distribué et réutilisé de manière autonome, ce qui signifie
+                que le contenu à l'intérieur de cette balise devrait avoir un sens et une pertinence meme s'il est extrait
+                de son contexte d'origine.-->
             <h2>CSS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae neque ipsam pariatur aliquid perferendis id 
             tempore provident rem quam recusandae voluptatibus saepe maxime, asperiores non unde placeat blanditiis omnis error!
@@ -47,13 +66,16 @@
                 tempore provident rem quam recusandae voluptatibus saepe maxime, asperiores non unde placeat blanditiis omnis error!
                 Tempore distinctio, obcaecati nam eveniet est totam repudiandae tenetur quam repellat minus pariatur tempora, 
                 laboriosam saepe possimus placeat inventore odio quas! Odio et deserunt laudantium quibusdam ad quas iure dolorum!</p>
-        </div>
+        </article> <!--Fin de l'<article>-->
 
-        <div class="piedDeplage">
-            <!-- ul*3>li*3>a{ lien-$}-->
+        </main> <!--Fin de la balise <main>-->
+
+        <footer> <!--La balise <footer > est utilise pour définir la partie de bas de la page d'une page web ou section. Elle 
+                contient généralement des informations telles que les coordonées de contacte, des liens vers des pages liées,
+                des crédits, ou toute autre information permtinente à la fin du contenu principal.-->
+          
             <ul>
                <li><a href="#">Lien 1</a></li>
-               <li><a href="#">lien 2</a></li>
                <li><a href="#">lien 2</a></li>
                <li><a href="#">lien 3</a></li>
             </ul>
@@ -72,10 +94,11 @@
 
 
 
-        </div>
+        </footer> <!--Fin du <footer>-->
+        
 
 
-    </div>
+    
 
     
     
