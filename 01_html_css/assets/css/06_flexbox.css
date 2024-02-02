@@ -1,0 +1,78 @@
+/* Feuille de style pour la page flexebox  */
+p{
+    font-size: 20px;
+}
+
+div{ 
+    font-weight: bolder;
+    border: 1px solid #333;
+}
+
+.style div{
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    line-height: 150px; 
+    /* Line-height nous permet de définire l"espacement entre les lignes d'un paragraphe dans un élément */
+    /* Dans le cas que l'on à un sel mot dans un élément, on peut l'utiliser afin de le centrer sur l'axe vertical */
+}
+
+.style :first-child{
+    background-color: orange;
+}
+
+.style :nth-child(2){
+    background-color: blue;
+}
+
+.style :last-child{
+    background-color: green;
+}
+
+/* B - ajoute du flex */
+.style div{
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    line-height: 150px; 
+   
+}
+
+.style :first-child{
+    background-color: orange;
+}
+
+.style :nth-child(2){
+    background-color: blue;
+}
+
+.style :last-child{
+    background-color: green;
+}
+
+#conteneurB {
+    display: flex;
+}
+
+#conteneurC {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#conteneurD {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#conteneurE {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#conteneurF {
+    display: flex;
+    flex-direction: column-reverse;
+}

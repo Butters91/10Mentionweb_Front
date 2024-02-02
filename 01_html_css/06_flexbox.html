@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="adama cissoko, flexbox">
+    <meta name="viewport" content="adama cissoko">
+    <link rel="stylesheet" href="assets/css/06_flexbox.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+    </header>
+    <main>
+        <section>
+            <h2>A- compprtement normal</h2>
+            <p>Le principe de la mise en page avec flexbox est simple : vous définissez un conteneur, et à 
+                l'intérieur vous placez plusieur éléments.
+            </p>
+            <!--di#conteneurA>div{Element$}*3-->
+            <div class="style" id="conteneurA">
+                <div>Element1</div>
+                <div>Element2</div>
+                <div>Element3</div>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>B - ajout du flex au conteneur</h2>
+
+            <p><span>display:flex</span> -> appliquer sur le conteneur, les blocs intérieurs se positionnent sur le
+            coté<span>Flex-dirrection</span>, on peut les positionner verticalement ou encore les inverser.
+            Il peut prendre les valeurs suivantes: <br>
+                    -> row : organisés sur une ligne ( par défant) <br>
+                    -> column : organis's sur une colonne <br>
+                    -> row-reverse : organsés sur une ligne mais en ordre inversé <br>
+                    -> colunm-reverse : organisé sur une colonne, mais en ordre <br>
+            </p>
+
+            <html>Row</html>
+
+            <div class="style" id="conteneurc">
+            <div>Element1</div>
+            <div>Element2</div>
+            <div>Element3</div>
+            </div>
+
+
+        </section>
+
+        
+        <section>
+            <h2>C - direction </h2>
+
+           
+
+            <div class="style" id="conteneurB">
+                <div>Element1</div>
+            <div>Element2</div>
+            <div>Element3</div>
+            </div>
+
+            <h3>Clunmn</h3>
+            <div class="style" id="conteneurD">
+            <div>Element1</div>
+            <div>Element2</div>
+            <div>Element3</div>
+            </div>
+
+            <h3>Row-reverse</h3>
+            <div class="style" id="conteneurE">
+                <div>Element1</div>
+            <div>Element2</div>
+            <div>Element3</div>
+            </div>
+
+            <h3>Column-reverse</h3>
+            <div class="style" id="conteneurF">
+            <div>Element1</div>
+            <div>Element2</div>
+            <div>Element3</div>
+            </div>
+
+
+        </section>
+    </main>
+    
+</body>
+</html>

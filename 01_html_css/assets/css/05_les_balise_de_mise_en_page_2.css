@@ -1,0 +1,121 @@
+
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #EEEDEB;
+}
+
+a{
+    font-weight: bold;
+    background-color: #d9a9db;
+    border-bottom-right-radius: 10px;
+
+}
+
+header{
+    text-align: center;
+    border: 2px solid #3C0753;
+    padding: 20px;
+}
+
+
+
+h1{
+    text-transform: uppercase;
+    color: #3C0753;
+    font-size: 50 px;
+}
+
+h1 a , nav a{
+
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0;
+
+}
+
+nav a:hover{
+    background-color: #3C0753;
+}
+
+/* style pour le main */
+main{
+    margin-top: 10px;
+    padding: 20px 50px;
+    border: 2px solid #3C0753;
+}
+
+/*  Pseudo class :first-child -> désigne le premier élément enfant  */
+main :first-child img { 
+    border-radius: 50px;
+}
+
+main section:nth-child(2) {
+
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/*  Pseudo class -> désigne le premier élément enfant  */
+main section:nth-child(2) {
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+
+image {
+    border-radius: 50px;
+}
+
+
+
+main section :nth-child(2) article{
+display: inline-block;
+border: solid 2px #3c0753;
+width: 30%;
+padding: 20px;
+background-color: black;
+}
+
+
+
+ /* style pour le footer */
+
+ footer {
+    margin-top: 20px;
+    border: #3C0753 solid 2px;
+ }
+
+ footer ul {
+    display: inline-block;
+    width: 33%;
+    list-style: none;
+
+ }
+
+ footer ul li {
+    margin-bottom: 20px;
+ }
+
+
+ footer a{
+    color: #3C0753;
+    padding: 8px 12px;
+}
