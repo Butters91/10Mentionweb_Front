@@ -75,185 +75,344 @@
             </div>
             
         </section>
-
         <section>
             <h2>D- Alignement</h2>
             <p>Les éléments sont organisés soit horizontalement (par défaut), soit verticalement.</p>
-        <ul>
-            <li>si vos éléments sont organisés horizontalement : l'axe principale (main axis) est l'axe horizontale,
+            <ul>
+                <li>si vos éléments sont organisés horizontalement : l'axe principale (main axis) est l'axe horizontale,
                 l'axe secondaire (cross axis) est l'axe vertical.</li>
-            <li>si vos éléments sont organisés verticalement : l'axe principale (main axis) est l'axe verticale, l'axe
+                <li>si vos éléments sont organisés verticalement : l'axe principale (main axis) est l'axe verticale, l'axe
                 secondaire (cross axis) est l'axe horizontale.</li>
-        </ul>
+            </ul>
+            <h3>1 - alignement sur l'axe principal</h3>
+            <p>Afin d'aligner nos éléments sur l'axe principale : on utilise la propriété du flex <span>justify-content</span></p>
+            <p>Cette propriété gère la distribution des emplacements des flex-items suivant la place disponible dans le flex-container. Elle le fait , selon le positionnenemnt ede l'axe principal</p>
+            <ul>
+                <li>flex-start : aligner au début( par défaut)</li>
+                <li>flex-end : aligner à la fin</li>
+                <li>center : aligner au centre</li>
+                <li>space-between : les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux)</li>
+                <li>space-around: les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités</li>
+                <li>space-evenly : les éléments sont répartis uniformément dans le conteneur d'alignememnt le long de l'axe principal</li>
+            </ul>
+            <h4>Flex-start - direction horizontale</h4>
+            <div class="style" id="conteneurFlex-start">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <h4>Flex-end - direction horizontale</h4>
+            <div class="style" id="conteneurFlex-end">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <h4>Center - direction horizontale</h4>
+            <div class="style" id="conteneurCenter">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
 
-        <h3>1- Alignement sur l'axe principale</h3>
-        <p>afin  d'aligner nos élément sur l'axe principale : on utilise la propriété du flew  <span>justify-content</span> </p>
-        <p>Cette propriété gère la distribution des emplacement des flex-items suivant la place disponible dans le flex-container.
-             Elle le fait, selon le positionnement de l'axe principale</p>
+            <h4>Space-between - direction horizontale</h4>
+            <div class="style" id="conteneurSpace-Between">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+
+            <h4>Space-around - direction horizontale</h4>
+            <div class="style" id="conteneurSpace-around">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            
+            <h4>Space-evenly - direction horizontale</h4>
+            <div class="style" id="conteneurSpace-evenly">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <hr>
+
+            <p>Si mes éléments sont dans une direction verticale, l'axe principale est l'axe verticale</p>
+
+            <h4>Flex-start - direction verticale</h4>
+            <div class="style" id="conteneurFlex-start-Vertical">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <h4>Flex-end - direction verticale</h4>
+            <div class="style" id="conteneurFlex-end-Vertical">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <h4>Center - direction verticale</h4>
+            <div class="style" id="conteneurFlex-center-Vertical">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+
+            <h4>Space-between - direction verticale</h4>
+            <div class="style" id="conteneurFlex-between-Vertical">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <h4>Space-around - direction verticale</h4>
+            <div class="style" id="conteneurFlex-around-Vertical">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+            <h4>Space-evenly - direction verticale</h4>
+            <div class="style" id="conteneurFlex-evenly-Vertical">
+                <div>Éelement1</div>
+                <div>Éelement2</div>
+                <div>Éelement3</div>
+            </div>
+
+            <h3>2 - Alignementsur l'axe secondaire</h3>
+            <p>Afin d'aligner nos éléments sur l'axe secondaire : on utilise la propriété du flex <span>align-items</span></p>
+            <p>Elle peut prendre comme valeur:</p>
+            <ul>
+                <li>flex-start : aligner au début</li>
+                <li>flex-end : aligner à la fin</li>
+                <li>center aligner au centre</li>
+                <li>stretch : les éléments sont étirés sur tout l'axe (valeur par défaut)</li>
+                <li>baseline : aligne sur la ligne de base</li>
+            </ul>
+            <h4>Flex-start - direction horizontale</h4>
+            <div class="style" id="conteneur-AI-FS-H">
+                <div>Elément 1</div>
+                <div>Elément 2</div>
+                <div>Elément 3</div>
+            </div>
+            <h4>Flex-end - direction horizontale</h4>
+            <div class="style" id="conteneur-AI-FE-H">
+                <div>Elément 1</div>
+                <div>Elément 2</div>
+                <div>Elément 3</div>
+            </div>
+            <h4>Center - direction horizontale</h4>
+            <div class="style" id="conteneur-AI-C-H">
+                <div>Elément 1</div>
+                <div>Elément 2</div>
+                <div>Elément 3</div>
+            </div>
+            <h4>Stretch - direction horizontale</h4>
+            <div class="style" id="conteneur-AI-S-H">
+                <div>Elément 1</div>
+                <div>Elément 2</div>
+                <div>Elément 3</div>
+            </div>
+    
+            <h4>Baseline- direction horizontale</h4>
+            <div class="style" id="conteneur-AI-B-H">
+                <div>Elément 1</div>
+                <div>Elément 2</div>
+                <div>Elément 3</div>
+            </div>
+
+            <h3>3 - Alignement d'un seul élément</h3>
+            <p>Il est possible de faire une exception pour un seul élément sur l'axe secondaire avec <span>align-self</span></p>
+            <h4>Align-self : flex-end</h4>
+            <div class="style" id="conteneurE-AS">
+                <div>Elément 1</div>
+                <div>Elément 2</div>
+                <div>Elément 3</div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>E - Retour à l ligne</h2>
+            <p>Par défaut, les blocs essaient de rester sur la même ligne m^me s'ils n'ont pas la place (ce qui provoque parfois des problèmes de conception). Si vous le souhaitez, vous pouvez demander au blocx de passer à la ligne lorsqu'il n'ont plus de place en utilisant la propriété <span>flex-wrap</span></p>
+            <p>Elle peut prendre les valeurs suivantes : </p>
+            <ul>
+                <li>nowrap : pas fe retour à la ligne (la valeur par défaut )</li>
+                <li>wrap : les élements vont à la ligne lorsqu'il n'y a plus de place</li>
+                <li>wrap-reverse : les éléments vont à la ligne lorsqu'il y'a pas de place en sens inverse </li>
+            </ul>
+            <h3>Nowrap</h3>
+            <div class="style style2" id="conteneurNoWrap">
+                <!-- div{Élément $}*11 -->
+                <div>Élément 1</div>
+                <div>Élément 2</div>
+                <div>Élément 3</div>
+                <div>Élément 4</div>
+                <div>Élément 5</div>
+                <div>Élément 6</div>
+                <div>Élément 7</div>
+                <div>Élément 8</div>
+                <div>Élément 9</div>
+                <div>Élément 10</div>
+                <div>Élément 11</div>           
+            </div>
+
+            <h3>Wrap</h3>
+            <div class="style style2" id="conteneurWrap">
+                <!-- div{Élément $}*11 -->
+                <div>Élément 1</div>
+                <div>Élément 2</div>
+                <div>Élément 3</div>
+                <div>Élément 4</div>
+                <div>Élément 5</div>
+                <div>Élément 6</div>
+                <div>Élément 7</div>
+                <div>Élément 8</div>
+                <div>Élément 9</div>
+                <div>Élément 10</div>
+                <div>Élément 11</div>           
+            </div>
+            <h3>Wrap-reverse</h3>
+            <div class="style style2" id="conteneurWrap-reverse">
+                <!-- div{Élément $}*11 -->
+                <div>Élément 1</div>
+                <div>Élément 2</div>
+                <div>Élément 3</div>
+                <div>Élément 4</div>
+                <div>Élément 5</div>
+                <div>Élément 6</div>
+                <div>Élément 7</div>
+                <div>Élément 8</div>
+                <div>Élément 9</div>
+                <div>Élément 10</div>
+                <div>Élément 11</div>           
+            </div>
+        </section>
+        <section>
+            <h2>F - Répartir plusieurs lignes</h2>
+            <p>
+                Si vous avez plusieurs ligne dans votre flexbox,vous pouvez choisir comment celles-ci seront réparties avec <span>align-content</span>.
+                Cette propriété permet de gérer l'alignement des différents lignes (ou colonnes) les un par rapports au autres.
+                Cette propriété n'aura d'éffet que si le conteneur flexible posséde plusieurs lignes(si l'axe principale est horizontal) ou plusieurs colonnes ( si l'axe principle est vertical) et que si le flex-wrap est présent.
+            </p>
+
+        <p> Les valeurs de cette propriété :</p>
         <ul>
-             <li>flex-star : aligner au début ( par défaut )</li>
-             <li>flex-end : aligner à la fin </li>
-             <li>center : aligner au centre </li>
-             <li>space-between : les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux)</li>
-             <li>space-around : les élément sont étirés sur tout l'axe, mais ils  laissent aussi de l'espace sur les extrémités</li>
-             <li>space-evenly : les éléments sont répartis uniformément dans le conteneur d'alignement le long de l'axe 
-                principal</li>
+            <li>flex-start : les éléments sont placés au début</li>
+            <li>flex-end : les élélements sont placés à la fin</li>
+            <li>center : les éléments sont placés au centre</li>
+            <li>space-between : les éléments sont séparés avec de l'éspace entre eux </li>
+            <li>space-around : les éléments sont séparés avec de l'éspace entre eux, mais il y'a aussi de l'éspace au
+                début et à la fin</li>
+            <li>space-evenly : Les éléments sont répartis uniformément dans le conteneur d'alignement le long de l'axe
+                principal. </li>
+            <li>stretch (par défaut) : les éléments s'étirent pour occuper tout l'éspace</li>
         </ul>
-
-        <h4>flex-star - direction horizontale</h4>
-        <div class="style" id="conteneurFlex-star">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
+        <h3>Stretch par défaut</h3>
+        <div class="style style2 wrap" id="stretch">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>     
+            <div>12</div>      
+        </div>
+        <h3>Flex-start</h3>
+        <div class="style style2 wrap" id="start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>     
+            <div>12</div>      
         </div>
 
-        <h4>Center - direction horizontale</h4>
-        <div class="style" id="conteneurCenter">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
+        <h3>Flex-end</h3>
+        <div class="style style2 wrap" id="end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <h3>Center</h3>
+        <div class="style style2 wrap" id="center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <h3>Between</h3>
+        <div class="style style2 wrap" id="between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <h3>Around</h3>
+        <div class="style style2 wrap" id="around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
         </div>
 
-        <h4>Space-between- direction</h4>
-        <div class="style" id="conteneurSpace-Between">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
+        <h3>Evenly</h3>
+        <div class="style style2 wrap" id="evenly">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
         </div>
-
-        <h4>Space-between- around</h4>
-        <div class="style" id="conteneurSpace-around">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>Space-between- arounds</h4>
-        <div class="style" id="conteneurSpace-around">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>Space - evenly-direction horizontal</h4>
-        <div class="style" id="conteneurSpace-evenly">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <hr>
-
-
-        <p>Si mes éléments sonts dans une direction verticale, 
-        l'axe principale est l'axe vertical</p>
-
-        <h4>Flex-start - direction verticale</h4>
-        <div class="style" id="conteneurFlex-start-Vertical">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>Flex-end - direction verticale</h4>
-        <div class="style" id="conteneurFlex-end-Vertical">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>center - direction verticale</h4>
-        <div class="style" id="conteneurFlex-center-Vertical">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>SPACE-BETWEEN - direction verticale</h4>
-        <div class="style" id="conteneurFlex-between-Vertical">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>SPACE-around - direction verticale</h4>
-        <div class="style" id="conteneurFlex-around-Vertical">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h4>SPACE-evenly - direction verticale</h4>
-        <div class="style" id="conteneurFlex-evenly-Vertical">
-            <div>Éelement1</div>
-            <div>Éelement2</div>
-            <div>Éelement3</div>
-        </div>
-
-        <h3>2 - Alignement sur l'axe secondaire </h3>
-        <p>Afin d'aligner nos éléments sur l'axe secondaire :
-            on utilise la propriété du flex <span> align-itemps </span>
-            <p>Elle peut prendre comme valeur</p>
-        </p>
-
-        <ul>
-            <li>flex-star : aligner au debut</li>
-            <li>flex-end : aligner à la fin</li>
-            <li>center aligner au centre</li>
-            <li>stretch : les éléments sont étirés sur tout l'axe
-                (valeur par défaut)</li>
-            <li>basile : aligne sur la ligne de base</li>
-        </ul>
-
-        <h4>Flex-start - direction horizontale</h4>
-        <div class="style" id="conteneur-AI-FS-H">
-            <div>Elément 1</div>
-            <div>Elément 2</div>
-            <div>Elément 3</div>
-        </div>
-        <h4>Flex-end - direction horizontale</h4>
-        <div class="style" id="conteneur-AI-FE-H">
-            <div>Elément 1</div>
-            <div>Elément 2</div>
-            <div>Elément 3</div>
-        </div>
-        <h4>Center - direction horizontale</h4>
-        <div class="style" id="conteneur-AI-C-H">
-            <div>Elément 1</div>
-            <div>Elément 2</div>
-            <div>Elément 3</div>
-        </div>
-        <h4>Stretch - direction horizontale</h4>
-        <div class="style" id="conteneur-AI-S-H">
-            <div>Elément 1</div>
-            <div>Elément 2</div>
-            <div>Elément 3</div>
-        </div>
-
-        <h4>Baseline- direction horizontale</h4>
-        <div class="style" id="conteneur-AI-B-H">
-            <div>Elément 1</div>
-            <div>Elément 2</div>
-            <div>Elément 3</div>
-        </div>
-
-        <h3>3 - Alignement d'un seul élément</h3>
-        <p>Il est possible de faire une exception pour un seul
-            élément sur l'axe secondaire avce <span>align-sef </span>
-        </p>
-
-        <h4>Align-self</h4>
-        <div class="style" id="conteneurE-AS">
-            <div>Elément 1</div>
-            <div>Elément 2</div>
-            <div>Elément 3</div>
-        </div>
-
-
-        
-
-
-
+    </section>
 
         </section>
 

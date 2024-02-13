@@ -1,297 +1,282 @@
-/* Feuille de style pour la page flexebox  */
-p{
-    font-size: 20px;
+/*  Feuille de style pour la page de flexbox  */
+* {
+  box-sizing: border-box;
 }
-
 body {
-    background-color: #fff;
-    width: 80%;
-    margin: 100px;
-    border: #333 ridge 4mm;
-    padding: 20px;
-
+  background-color: 
+#FFF6F6;
+  width: 80%;
+  margin: 100px auto;
+  border: 
+#333 ridge 4mm;
+  padding: 20px;
+  
 }
-
 h1 {
-    text-align: center;
-    color: #c147e9;
-    text-transform: uppercase;
+  text-align: center;
+  color: 
+#C147E9;
+  text-transform: uppercase;
 }
-
 h2 {
-    color: red;
+  color: 
+#B31312;
 }
-
 h3 {
-    color: #967e76;
+  color: 
+#967E76;
 }
 
-div{ 
-    font-weight: bolder;
-    border: 1px solid #333;
+p {
+  font-size: 20px;
 }
 
+div {
+  font-weight: bolder;
+  border: 1px solid 
+#333;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+  color: 
+darkmagenta;
+}
+/*  Puisque la propriété display avec la valeur flex est utilisée beaucoup de fois sur les div enfants de la classe style on vas l'appliquer une seule fois en séléctionnant ces derniers sauf la première div avec l'identifiant conteneurA */
 .style:not(#conteneurA) {
-    display: flex;
+  display: flex;
+  height: 700px;
 }
-/*  Puisque la propriété display avec la valeur flex est utilisée beaucoup de fois sur les div enfants de la classe style on vas l'appliquer une seule fois en séléctionnant 
-ces derniers sauf la première div avec l'identifiant 
-conteneurA */
-
 .style div{
-    width: 200px;
-    height: 150px;
-    color: #fff;
-    line-height: 150px; 
-    /* Line-height nous permet de définire l"espacement entre les lignes d'un paragraphe dans un élément */
-    /* Dans le cas que l'on à un sel mot dans un élément, on peut l'utiliser afin de le centrer sur l'axe vertical */
+  width: 200px;
+  height: 150px;
+  color: 
+#fff;
+  line-height: 150px ;  /* line-height nous permet de définire l'espacement entre les lignes d'un paragraphe dans un élément
+  */
+  /* Dans le cas que l'on a un seul mot dans un élément, on peut l'utiliser afin de le centre sur l'axe vertical */
 }
-
-.style :first-child{
-    background-color: orange;
+.style :first-child {
+  background-color: 
+orange;
 }
-
-.style :nth-child(2){
-    background-color: blue;
+.style :nth-child(2) {
+  background-color: 
+blue;
 }
-
-.style :last-child{
-    background-color: green;
+.style :last-child {
+  background-color: 
+green;
 }
-
-/* B - ajoute du flex */
-.style div{
-    width: 200px;
-    height: 150px;
-    color: #fff;
-    line-height: 150px; 
-   
-}
-
-.style :first-child{
-    background-color: orange;
-}
-
-.style :nth-child(2){
-    background-color: blue;
-}
-
-.style :last-child{
-    background-color: green;
-}
+/*  B - ajout du flex */
+/* 
+Principe du flexbox:  permet de passer d'un contexte bloc à un contexte flex, pour le faire il faut appliquer un modéle de boite flexible sur le conteneur de mes éléments, : le conteneur = l'élément  parent.
+Dans le contexte flex on vas  avoir un axe principale (main axis), il est par défaut horizontal et il commence à gauche. Les élément qui sont à l'intérieur du parent ( avec un contexte flex) vont être distribués en fonction de cet axe principal.
+*/
 
 #conteneurB {
-    display: flex;
-    
-} 
-/* La direction par défaut de flex est définie sur row, ce qui signifie que les éléments enfants 
-du conteneur flex seront disposés horizontalement, côte à côte.*/
+  display: flex;
+  /* Instruction à donner au parent , suite à cette application les éléments dans le conteneurB ont totalement changés: les div 
+  s'affichent côte à côte */
+}
+
+#conteneurRow {
+
+  flex-direction: row; /* La direction par défaut de flex est définie sur row, ce qui signifie que les éléments enfants du conteneur 
+  flex seront disposés horizontalement, côte à côte.*/
+}
+/*  Pour changer la direction, on peut utiliser la propriété flex-direction avec des valeurs telles que column pour organiser 
+les éléments en colonne */
 
 
-/* Instruction à donner au parent , suite à cette 
-application les éléments dans le conteneurB ont totalement 
-changés: les div s'affichent côte à côte */
+/* Column */
+#conteneurColumn {
 
+  flex-direction: column;/* Dans cet exemple, la propriété flex-direction a la valeur column, et les flex-items sont placés en haut du
+   flex-container, sur l'origine de l'axe principal. Cette fois, l'axe principal est dirigé du haut vers le bas. */
+}
 
-#conteneurC {
-   
-    flex-direction: row; 
-    /* 
-Principe du flexbox:  permet de passer d'un contexte bloc à un contexte flex,
- pour le faire il faut appliquer un modéle de boite flexible sur le conteneur
-  de mes éléments, : le conteneur = l'élément  parent.
-Dans le contexte flex on vas  avoir un axe principale (main axis), il est par défaut horizontal et il commence à gauche. 
-Les élément qui sont à l'intérieur du parent ( avec un contexte flex) vont être distribués en fonction de cet axe principal.
+/* Row-reverse */
 
-*/
+#conteneurRowReverse {
+
+  flex-direction: row-reverse;/* Dans cet exemple, la propriété flex-direction a la valeur row-reverse, et les flex-items sont placés sur le côté droit du flex-container, sur l'origine de l'axe principal. Cette fois, l'axe principal est dirigé de la droite vers la gauche.*/
 }
 
 
-#conteneurD {
-    
-    flex-direction: column;
+#conteneurColumnReverse {
+
+  flex-direction: column-reverse; /* Dans cet exemple, la propriété flex-direction a la valeur column-reverse, et les flex-items sont 
+  placés en bas du flex-container, sur l'origine de l'axe principal. Cette fois, l'axe principal est dirigé du bas vers le haut.*/
 }
-/* Dans cet exemple, la propriété flex-direction a la valeur column, et les flex-items sont placés en 
-haut du flex-container, sur l'origine de l'axe principal. Cette fois, l'axe principal est dirigé du haut vers le bas. */
 
 
-#conteneurRowRiverser{
-    
-    flex-direction: row-reverse;
+/* ************ D -  Alignement  *********** */
+
+#conteneurFlex-start {
+  justify-content: flex-start;/* Dans cet exemple, justify-content vaut flex-start. Avec un flex-direction qui vaut row, les 
+  flex-items se placent dans l'ordre du HTML sur le bord gauche du flex-container. Il n'y a aucun espace entre eux. L'espace 
+  disponible dans le flex-container est laissé à droite.*/
 }
-/* Dans cet exemple, la propriété flex-direction a la valeur row-reverse, et les flex-items sont placés sur le côté droit du
- flex-container, sur l'origine de l'axe principal. 
-Cette fois, l'axe principal est dirigé de la droite vers la gauche.*/
-
-
-#conteneurColumn{
-    
-    flex-direction: column-reverse;
+#conteneurFlex-end {
+  justify-content: flex-end; /* Dans cet exemple, justify-content vaut flex-end. Avec un flex-direction qui vaut row, les flex-items 
+  se placent dans l'ordre du HTML sur le bord droit du flex-container. Il n'y a aucun espace entre eux. L'espace disponible dans le 
+  flex-container est laissé à gauche.*/
 }
-/* Dans cet exemple, la propriété flex-direction a la valeur column-reverse, et les flex-items sont placés en bas du flex-container, 
-sur l'origine de l'axe principal. Cette fois, 
-l'axe principal est dirigé du bas vers le haut.*/
 
-/* D- Alignement */
-
-.conteneurFlex-star{
-    justify-content: flex-end;
+#conteneurCenter {
+  justify-content: center;/* Dans cet exemple, justify-content vaut center. Les flex-items se placent dans l'ordre du HTML au centre du 
+  flex-container. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé de part et d'autre du groupe de flex-items. */
 }
-/* Dans cet exemple, justify-content vaut flex-start. Avec un flex-direction qui vaut row, les flex-items se placent dans l'ordre 
-du HTML sur le bord gauche du flex-container. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est 
-laissé à droite.*/
 
-.conteneurFlex-en{
-    justify-content: flex-end;
+#conteneurSpace-Between {
+  justify-content: space-between;/* Dans cet exemple, justify-content vaut space-between. Tout l'espace disponible est réparti 
+  équitablement et uniquement entre les flex-items.*/
 }
-/* Dans cet exemple, justify-content vaut flex-end. Avec un flex-direction qui vaut row, les flex-items se placent dans 
-l'ordre du HTML sur le bord droit du flex-container.
- Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé à gauche.*/
 
- #conteneurCenter {
-    justify-content: center;
- }
- /* Dans cet exemple, justify-content vaut center. Les flex-items se placent dans l'ordre du HTML au centre du flex-container.
-  Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé de part et d'autre du groupe de 
-  flex-items. */
-
-  #conteneurSpace-Between {
-    justify-content: space-around;
-  }
-  /* Dans cet exemple, justify-content vaut space-between. Tout l'espace disponible est réparti équitablement et uniquement 
-  entre les flex-items.*/
-
-  #conteneurrSpace-around {
-    justify-content: space-around;
-  } 
-  /* Dans cet exemple, justify-content vaut space-around. Un espace est laissé entre les flex-items, qui vaut le double de celui, 
-  qui est laissé sur les côtés du flex-container.*/
-
-#conteneurSpace-evenly{
-    justify-content: space-evenly;
+#conteneurSpace-around {
+  justify-content: space-around;/* Dans cet exemple, justify-content vaut space-around. Un espace est laissé entre les flex-items, 
+  qui vaut le double de celui, qui est laissé sur les côtés du flex-container.*/
 }
-/* Dans cet exemple, justify-content vaut space-evenly. 
-Tout l'espace disponible est réparti équitablement entre 
-les flex-items et les bords du flex-container.*/
+
+#conteneurSpace-evenly {
+  justify-content: space-evenly; /* Dans cet exemple, justify-content vaut space-evenly. Tout l'espace disponible est réparti 
+  équitablement entre les flex-items et les bords du flex-container.*/
+}
 
 #conteneurFlex-start-Vertical {
-    flex-direction: column;
-    justify-content: flex-start;
-}
-/* Dans cet exemple, justify-content est défini sur flex-start. Avec une valeur de flex-direction à column, les éléments flexibles sont alignés verticalement en commençant par le haut du conteneur flex. 
-Il n'y a aucun espace entre eux. L'espace disponible dans le
- conteneur flex est laissé en dessous. */
+  flex-direction: column;
+  justify-content: flex-start;/* Dans cet exemple, justify-content est défini sur flex-start. Avec une valeur de flex-direction à 
+  column, les éléments flexibles sont alignés verticalement en commençant par le haut du conteneur flex. Il n'y a aucun espace entre eux. L'espace disponible dans le conteneur flex est laissé en dessous. */
 
-#conteneurFlex-end-Vertical {
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 700px
 }
-;/* Dans cet exemple, justify-content vaut flex-end. Avec un flex-direction qui vaut column, les flex-items sont alignés en bas du conteneur dans 
-l'ordre du HTML. Il n'y a aucun espace entre eux. 
-L'espace disponible dans le flex-container 
-est laissé à gauche.*/
+#conteneurFlex-end-Vertical {
+  flex-direction: column;
+  justify-content: flex-end;;/* Dans cet exemple, justify-content vaut flex-end. Avec un flex-direction qui vaut column, les 
+  flex-items sont alignés en bas du conteneur dans l'ordre du HTML. Il n'y a aucun espace entre eux. L'espace disponible dans le 
+  flex-container est laissé à gauche.*/
+}
 
 #conteneurFlex-center-Vertical {
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;/* Dans cet exemple, justify-content vaut center. Les flex-items sont alignés verticalement et se placent 
+  dans l'ordre du HTML au centre du flex-container. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est 
+  laissé de part et d'autre du groupe de flex-items. */
 }
-/* Dans cet exemple, justify-content vaut center. Les flex-items sont alignés verticalement et se placent
- dans l'ordre du HTML au centre du flex-container. 
- Il n'y a aucun espace entre eux. L'espace disponible 
- dans le flex-container est laissé de part et d'autre d
- u groupe de flex-items. */
 
 #conteneurFlex-between-Vertical {
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;/* Dans cet exemple, justify-content vaut space-between.  les éléments flexibles sont répartis 
+  verticalement dans le conteneur, tout l'espace disponible est réparti équitablement et uniquement entre les flex-items.*/
 
 }
-/* Dans cet exemple, justify-content vaut space-between. 
-les éléments flexibles sont répartis verticalement dans le conteneur, 
-tout l'espace disponible est réparti équitablement et 
-uniquement entre les flex-items.*/
 
 #conteneurFlex-around-Vertical {
-    flex-direction: column;
-    justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;/* Dans cet exemple, justify-content vaut space-around. Les éléments flexibles sont répartis 
+  verticalement avec un espace laissé entre les flex-items qui vaut le double de celui, qui est laissé sur les côtés du flex-container.*/
 }
-/* Dans cet exemple, justify-content vaut space-around. Les éléments flexibles sont 
-répartis verticalement avec un espace laissé entre les 
-flex-items qui vaut le double de celui, qui est laissé 
-sur les côtés du flex-container.*/
-
-#conteneurFlex-evenly-Vertical{
-    flex-direction: column;
-    justify-content: space-evenly;
+#conteneurFlex-evenly-Vertical {
+  flex-direction: column;
+  justify-content: space-evenly; /* Dans cet exemple, justify-content est défini sur space-evenly. les éléments flexibles sont 
+  répartis verticalement dans le conteneur avec un espacement égal entre eux, ainsi qu'entre le premier élément et le bord supérieur 
+  du conteneur, et entre le dernier élément et le bord inférieur du conteneur.. */  
 }
-/* Dans cet exemple, justify-content est défini sur space-evenly. les éléments flexibles sont répartis 
-verticalement dans le conteneur avec un espacement
- égal entre eux, ainsi qu'entre le premier élément 
- et le bord supérieur du conteneur, et entre le dernier 
- élément et le bord inférieur du conteneur.. */
-
- #conteneur-AI-FS-H {
-    align-items: flex-start;
-
- }
- /* Dans cet exemple, avec la valeur flex-start, 
- les flex-items sont alignés sur le bord haut du 
- flex-container qui est le début de l'axe secondaire. */
-
- #conteneur-AI-FE-H {
-    align-items: flex-end;
- }
- /* Dans cet exemple, avec la valeur flex-end, les 
- flex-items sont alignés sur le bord bas du 
- flex-container qui est dans le sens de la fin de 
- l'axe secondaire.*/
-
- #conteneur-AI-C-H {
-    align-items: center;
- }
- /* Dans cet exemple, avec la valeur center, les flex-items sont 
-alignés au centre du flex-container. sur 
-l'axe secondaire verticale.*/
-
-#conteneur-AI-S-H div{
-    height: auto;
+/* *************** Aligner sur l’axe secondaire ******** */
+#conteneur-AI-FS-H{
+  align-items: flex-start;/* Dans cet exemple, avec la valeur flex-start, les flex-items sont alignés sur le bord haut du 
+  flex-container qui est le début de l'axe secondaire. */
 }
 
+#conteneur-AI-FE-H {
+  align-items: flex-end;/* Dans cet exemple, avec la valeur flex-end, les flex-items sont alignés sur le bord bas du flex-container 
+  qui est dans le sens de la fin de l'axe secondaire.*/
+}
+
+#conteneur-AI-C-H {
+  align-items: center;/* Dans cet exemple, avec la valeur center, les flex-items sont alignés au centre du flex-container. sur 
+  l'axe secondaire verticale.*/
+}
+
+
+#conteneur-AI-S-H div {
+  height: auto;
+}
 #conteneur-AI-S-H {
-
+  align-items: stretch;/* Dans cet exemple, le flex-container fait 700px de haut et il n'y a pas de hauteur sur les flex-items. 
+  Si la propriété align-items vaut stretch, les flex-items vont être étirés sur toute la hauteur du flex-container.*/
 }
-/* Dans cet exemple, 
-e flex-container fait 400px de haut et il n'y a pas de 
-hauteur sur les flex-items. Si la propriété align-items 
-vaut stretch, les flex-items vont être étirés sur toute l
-a hauteur du flex-container.*/
-
 #conteneur-AI-B-H :first-child{
-    padding: 30px;
+  padding: 30px;
 }
-#conteneur-AI-B-H :nth-child(2) {
-    padding: 10px;
-
+#conteneur-AI-B-H :nth-child(2){
+  padding: 10px;
 }
-#conteneur-AI-B-H :last-child {
-    padding: 50px;
+#conteneur-AI-B-H :last-child{
+  padding: 50px;
 }
 #conteneur-AI-B-H {
-    align-items: baseline;
+  align-items: baseline;/* Dans cet exemple, avec la valeur baseline, les flex-items vont être alignés dans leur axe secondaire de telle sorte à ce que leurs lignes de base (ligne imaginaire sur laquelle est écrit le texte) soit alignées */
 }
-/* Dans cet exemple, avec la valeur baseline, les flex-items vont être 
-alignés dans leur axe secondaire de telle sorte à ce que 
-leurs lignes de base (ligne imaginaire sur laquelle est 
-écrit le texte) soit alignées */
 
+
+/* *************** Aligner un seul élément ******** */
 #conteneurE-AS {
-    align-items: center;
+  align-items: center;
 }
 
 #conteneurE-AS :nth-child(2) {
-    align-self: flex-end;
+  align-self: flex-end;/*Elle permet de contrôler l'alignement vertical d'un élément spécifique à l'intérieur d'un conteneur flex. L'élément est aligné sur le bord inférieur du conteneur flex*/
 }
-/*Elle permet de contrôler l'alignement vertical d'un élément spécifique à l'intérieur 
-d'un conteneur flex. L'élément est aligné sur le bord 
-inférieur du conteneur flex*/
+
+
+/* ************ E -  retour à la ligne  *********** */
+
+.style2 :nth-child(odd){ /* Pseudo classe qui séléctionne tou les éléments avec un ordre impair*/
+  background-color: 
+orange;
+}
+.style2 :nth-child(even){ /* Pseudo classe qui séléctionne tou les éléments avec un ordre pair*/
+  background-color: 
+blue;
+}
+/* Si flex-wrap vaut nowrap et que les flex-items sont dans leur configuration par défaut, alors les flex-items seront rétrécis*/
+#conteneurWrap {
+  flex-wrap: wrap;/* Si flex-wrap vaut wrap, alors les flex-items seront répartis sur une nouvelle ligne */
+}
+#conteneurWrap-reverse {
+  flex-wrap: wrap-reverse;/* les éléments flexibles vont passer à la ligne de manière inversé par rapport à leur ordre d'origine*/
+}
+
+/* ************ F -  Répartir plusieurs lignes   *********** */
+
+.wrap {
+  flex-wrap: wrap;
+}
+#stretch div {
+  height: auto;
+}
+#stretch {
+  align-content: stretch;
+}
+
+#stat {
+  align-content: flex-start;
+}
+
+#end {
+  align-content: flex-end; /*Les deux lignes (ou plus) de flex-items sont réparties, sur le bas du flex-container, suivant de l'axe secondaire.*/
+}
+#center {
+  align-content: center; /* Les deux lignes (ou plus) de flex-items sont réparties, au centre du flex-container. L'espace disponible est équitablement réparti, de part et d'autre, de ces deux lignes*/
+}
+#between {
+  align-content: space-between; /* Les deux lignes (ou plus) de flex-items sont placées contre les bords du flex-container. L'espace restant est placé entre les deux lignes.*/
+}
+#around {
+  align-content: space-around; /*L'espace disponible est réparti entre les deux lignes de flex-items et les bords du flex-container. L'espace sur les bords vaut la moitié de l'espace entre les lignes.*/
+}
+#evenly {
+  align-content: space-evenly; /* L'espace disponible est réparti de manière équitable entre les deux lignes de flex-items et les bords du flex-container.*/
+}
