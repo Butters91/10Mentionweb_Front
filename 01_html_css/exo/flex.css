@@ -1,17 +1,51 @@
-* h2 {
-    text-align: center;
-    background-color: #FFC0CB ;
+.body{
+    width: 50px;
+    margin: 50px auto;
 }
 
-h3 {
-    text-align: center;
-    background-color: #FFFF00;
+#headerzoning {
+    display: flex;
+    flex-direction: column;
 }
 
-h2 {
+#headerzoning :first-child{
+    background-color: #ffc0cb;
     text-align: center;
-    background-color: #77B5FE;
+    justify-content: center;
+    font-size: large;
+    height: 50px;
+    
 }
+
+#headerzoning :last-child{
+    background-color: #f7f39a;
+    text-align: center;
+    height: 50px;
+}
+
+#headerzone{
+    display: flex;
+}
+
+#headerzone :first-child{
+    flex-direction: row;
+    background-color:  #10828c;
+    text-align: center;
+    height: 400px;
+    width: 150px;
+}
+
+#headerzone :last-child{
+    background-color: #a0b08b ;
+    text-align: center;
+    width: 860px;
+} 
+
+/* Exo- 2 */
+
+
+
+
 
 
 

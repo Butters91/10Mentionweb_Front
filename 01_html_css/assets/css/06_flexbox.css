@@ -43,7 +43,8 @@ span {
   color: 
 darkmagenta;
 }
-/*  Puisque la propriété display avec la valeur flex est utilisée beaucoup de fois sur les div enfants de la classe style on vas l'appliquer une seule fois en séléctionnant ces derniers sauf la première div avec l'identifiant conteneurA */
+/*  Puisque la propriété display avec la valeur flex est utilisée beaucoup de fois sur les div enfants de la classe style on vas 
+l'appliquer une seule fois en séléctionnant ces derniers sauf la première div avec l'identifiant conteneurA */
 .style:not(#conteneurA) {
   display: flex;
   height: 700px;
@@ -71,8 +72,10 @@ green;
 }
 /*  B - ajout du flex */
 /* 
-Principe du flexbox:  permet de passer d'un contexte bloc à un contexte flex, pour le faire il faut appliquer un modéle de boite flexible sur le conteneur de mes éléments, : le conteneur = l'élément  parent.
-Dans le contexte flex on vas  avoir un axe principale (main axis), il est par défaut horizontal et il commence à gauche. Les élément qui sont à l'intérieur du parent ( avec un contexte flex) vont être distribués en fonction de cet axe principal.
+Principe du flexbox:  permet de passer d'un contexte bloc à un contexte flex, pour le faire il faut appliquer un modéle de boite 
+flexible sur le conteneur de mes éléments, : le conteneur = l'élément  parent.
+Dans le contexte flex on vas  avoir un axe principale (main axis), il est par défaut horizontal et il commence à gauche. 
+Les élément qui sont à l'intérieur du parent ( avec un contexte flex) vont être distribués en fonction de cet axe principal.
 */
 
 #conteneurB {
@@ -101,7 +104,9 @@ les éléments en colonne */
 
 #conteneurRowReverse {
 
-  flex-direction: row-reverse;/* Dans cet exemple, la propriété flex-direction a la valeur row-reverse, et les flex-items sont placés sur le côté droit du flex-container, sur l'origine de l'axe principal. Cette fois, l'axe principal est dirigé de la droite vers la gauche.*/
+  flex-direction: row-reverse;/* Dans cet exemple, la propriété flex-direction a la valeur row-reverse, et les flex-items sont placés 
+  sur le côté droit du flex-container, sur l'origine de l'axe principal. Cette fois, l'axe principal est dirigé de la droite vers la 
+  gauche.*/
 }
 
 
@@ -127,7 +132,8 @@ les éléments en colonne */
 
 #conteneurCenter {
   justify-content: center;/* Dans cet exemple, justify-content vaut center. Les flex-items se placent dans l'ordre du HTML au centre du 
-  flex-container. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé de part et d'autre du groupe de flex-items. */
+  flex-container. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé de part et d'autre du 
+  groupe de flex-items. */
 }
 
 #conteneurSpace-Between {
@@ -148,7 +154,8 @@ les éléments en colonne */
 #conteneurFlex-start-Vertical {
   flex-direction: column;
   justify-content: flex-start;/* Dans cet exemple, justify-content est défini sur flex-start. Avec une valeur de flex-direction à 
-  column, les éléments flexibles sont alignés verticalement en commençant par le haut du conteneur flex. Il n'y a aucun espace entre eux. L'espace disponible dans le conteneur flex est laissé en dessous. */
+  column, les éléments flexibles sont alignés verticalement en commençant par le haut du conteneur flex. Il n'y a aucun espace entre eux. 
+  L'espace disponible dans le conteneur flex est laissé en dessous. */
 
 }
 #conteneurFlex-end-Vertical {

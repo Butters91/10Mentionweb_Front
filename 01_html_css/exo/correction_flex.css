@@ -1,0 +1,97 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: black;
+} */
+
+/* h1,h2{
+    color: azure;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#CBD285;
+    padding: 3px;
+}
+
+nav a{
+    color: #333;
+    font-weight: bold;
+}
+/* ***************************************************exercice 2******** */
+
+section{
+    width: 50%;
+    margin: 100px auto;
+}
+#zoning1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffd6d6;
+    text-align: center;
+}
+h3{
+ width: 100%
+}
+#zoning1 header{
+    background-color: #f7f39a;
+    width: 100%;
+}
+#zoning1 aside, #zoning1 section{
+    height: 500px;
+    line-height: 500px;
+
+}
+#zoning1 aside{
+    background-color:#10828c;
+    width: 20%;
+}
+#zoning1 section{
+    background-color:#A0B08B;
+    width: 80%;
+    margin: 0;
+}
+
+/* **********************Execice 3****************************** */
+
+#zoning2 {
+    background-color: #ffd5d6;
+    text-align: center;
+}
+
+#zoning2 header {
+    background-color: teal;
+    height: 70px;
+    line-height: 70px;
+}
+
+#zoning2 div {
+    display: flex;
+}
+
+#zoning2 aside{
+    background-color: tomato;*
+    height: 500px;
+    line-height: 500px;
+    width: 20%;
+
+}
+
+#zoning2 div div {
+    width: 60%;
+    line-height: 500px;
+    height: 500px;
+
+}
+
+#zoning2 div div p {
+    width: 100%;
+}
+
+
+
+

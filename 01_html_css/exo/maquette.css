@@ -1,0 +1,55 @@
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/*  Style pour le header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:  4mm ridge 
+#FF3366;
+
+}
+
+.logo img {    
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+nav a {
+    font-weight: bolder;
+    color: 
+#FF3366;
+}
+/*  style pour main */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+aside {
+    width: 30%;
+}
+
+main>div {/* selectionne l'enfant directe d'un élément  celui qui est imbriqué directement après son élément référent */
+    width: 70%;
+
+}
