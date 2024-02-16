@@ -35,6 +35,8 @@ nav a {
 /*  style pour main */
 
 main {
+    width: 90%;
+    margin: 50px auto;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -45,11 +47,72 @@ h1 {
     padding: 50px 0;
     text-transform: uppercase;
 }
-aside {
-    width: 30%;
-}
 
-main>div {/* selectionne l'enfant directe d'un élément  celui qui est imbriqué directement après son élément référent */
+main>div {/* selectionne l'enfant directe d'un élément  celui qui est imbriqué directement 
+            après son élément référent */
     width: 70%;
 
 }
+
+main>div section:first-child {
+    background-color: #ffe7e7;
+    padding: 50px;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+main>div section:nth-child(2){
+    background-color: #944e63;
+    padding: 50px;
+}
+
+main>div section:nth-child(2) div {
+    display: flex;
+    justify-content: space-between;
+}
+
+main article {
+    width: 30%;
+    background-color: #b47b84;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+aside {
+    width: 30%;
+    background-color: #caa6a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+aside a {
+    background-color: #ffe7e7;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style poue footer  */
+ footer p {
+    border-top: 4mm ridge#ff3366;
+    text-align: center;
+ }
+
+ footer p { 
+    padding: 30px;
+ }

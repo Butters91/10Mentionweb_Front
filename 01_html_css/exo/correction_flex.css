@@ -91,7 +91,16 @@ h3{
 #zoning2 div div p {
     width: 100%;
 }
+#zoning2 div aside:first-child{
+    order: 1;
+}
 
+#zoning2 div aside:nth-child(2) {
+    order: 3;
+}
 
+#zoning2 div aside:nth-child(2) {
+    order: 2;
+}
 
 
