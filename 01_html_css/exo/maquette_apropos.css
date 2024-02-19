@@ -1,0 +1,41 @@
+/* style pour la page à propos */
+
+/* style pour la page  */
+aside a {
+    background-color: #ffe7;
+}
+ 
+.a_propos section :first-child {
+    background-color: #ffe7e7;
+    padding: 50px;
+}
+
+.a_propos section :first-child div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.a_propos section :first-child div img {
+    height: 40px;
+    border-radius: 30px;
+}
+
+.a_propos :first-child div p{
+    width: 50%;
+    background-color: #fff;
+    padding: 110px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+footer {
+    border-top: 4mm ridge #ff3366;
+    text-align: center;
+}
+
+footer p {
+    padding: 30px;
+}

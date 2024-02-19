@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: 
+  #FFF6F6;
+    width: 80%;
+    margin: 100px auto;
+    border: 
+  #333 ridge 4mm;
+    padding: 20px;
+    
+  }

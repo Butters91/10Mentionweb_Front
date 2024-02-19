@@ -273,19 +273,24 @@ blue;
 }
 
 #end {
-  align-content: flex-end; /*Les deux lignes (ou plus) de flex-items sont réparties, sur le bas du flex-container, suivant de l'axe secondaire.*/
+  align-content: flex-end; /*Les deux lignes (ou plus) de flex-items sont réparties, sur le bas du flex-container, 
+  suivant de l'axe secondaire.*/
 }
 #center {
-  align-content: center; /* Les deux lignes (ou plus) de flex-items sont réparties, au centre du flex-container. L'espace disponible est équitablement réparti, de part et d'autre, de ces deux lignes*/
+  align-content: center; /* Les deux lignes (ou plus) de flex-items sont réparties, au centre du flex-container. 
+  L'espace disponible est équitablement réparti, de part et d'autre, de ces deux lignes*/
 }
 #between {
-  align-content: space-between; /* Les deux lignes (ou plus) de flex-items sont placées contre les bords du flex-container. L'espace restant est placé entre les deux lignes.*/
+  align-content: space-between; /* Les deux lignes (ou plus) de flex-items sont placées contre les bords du flex-container. 
+  L'espace restant est placé entre les deux lignes.*/
 }
 #around {
-  align-content: space-around; /*L'espace disponible est réparti entre les deux lignes de flex-items et les bords du flex-container. L'espace sur les bords vaut la moitié de l'espace entre les lignes.*/
+  align-content: space-around; /*L'espace disponible est réparti entre les deux lignes de flex-items et les bords du flex-container. 
+  L'espace sur les bords vaut la moitié de l'espace entre les lignes.*/
 }
 #evenly {
-  align-content: space-evenly; /* L'espace disponible est réparti de manière équitable entre les deux lignes de flex-items et les bords du flex-container.*/
+  align-content: space-evenly; /* L'espace disponible est réparti de manière équitable entre les deux lignes de flex-items et les 
+  bords du flex-container.*/
 }
 
 /* Par défaut, l'ordre d'apparition des flex-items correspond à l'ordre de leur apparition dans le code HTML, cet ordre peut être 

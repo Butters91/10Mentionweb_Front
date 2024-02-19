@@ -36,8 +36,13 @@
     -->
 
     
-    <form action="06_flexbox.html" method="post" enctype="multipart/form-data"> <!-- Debut du formulaire -->
+    <form action="06_flexbox.html" method="post" enctype="multipart/form-data" autocomplete="off"> <!-- Debut du formulaire -->
         <!-- enctype="multipart/form-data" on l'utilise quand on a un champ d'envoi de fichier dans le formulaire -->
+        <!-- /* @import: C'est une règle at-rule CSS qui est utilisée pour importer des ressources externes, 
+            telles que des feuilles de style, des polices, etc., dans une feuille de style CSS */ -->
+            <!-- Lorsque la valeur de l'attribut autocomplete est défini sur "off", cela signifie que les navigateurs ne 
+                doivent pas suggérer ou compléter automatiquement les valeurs des champs de formulaire basées sur l'historique de 
+                saisie de l'utilisateur -->
       <fieldset>
         <!-- fieldset permet d'assembler des élément de notre formulaire lorsq'ils sont en lien 
          -->
@@ -122,7 +127,9 @@
             <select name="pays" id="Europe">
                 <optgroup label="Europe">
                     <!-- groupe les options : séparer les pays en fanction de leur continent -->
-                   <option value="france">france</option>
+                   <option value="france" selected >france</option>
+                   <!-- l'attribuselected est utilisé pour définir qu'un élément d'une liste déroulante est selectionné par
+                        défaut lorsque la page est chargée -->
                    <option value="espagne">espagne</option>
                    <option value="italie">Italie</option>
                    <option value="royaume-uni">Royaume-Uni</option>
