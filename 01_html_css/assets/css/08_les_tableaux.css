@@ -26,6 +26,7 @@ table {
     padding: 30px;
     background-color: #fff6e9;
     /* Par défaut la bordure contient 2 trats pour que le trait soit unique ou utilise la propriété border-collapse  */
+    border-collapse: collapse;
 
 }
 
@@ -37,3 +38,57 @@ th, td {
 thead,tfoot {
     background-color: #be7575;
 }
+
+#demoRowspan tr :first-child:not(:last-child) {
+    background-color: #be7575;
+}
+
+/* exo 1 */
+
+#exo1 td, #exo2 td {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.noir {
+    background-color: black;
+    border: solid;
+} 
+
+.rouge {
+    background-color: red;
+}
+
+.borderT {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* exo 2 bis */
+
+#exoRowspan {
+    height: 15em;
+    background-color: white;
+  }
+  
+  
+  
+  #exoRowspan th, #exoRowspan td {
+    border: none;  
+  }
+  
+  .black {
+    background-color: black;
+  }
+  .red {
+    background-color: red;
+  }
+  
+  .borderLeft {
+    border-radius: 10px 0 0 0;
+  }
+  
+  .borderRight {
+    border-radius: 0 10px 0 0;
+  }
