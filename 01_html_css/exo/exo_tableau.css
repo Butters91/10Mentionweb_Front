@@ -1,11 +1,29 @@
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    width: 900px;
-} 
+    margin: 0 auto;
+    border:  solid black;
+   
+    
+}
+
+main {
+    width: 100%;
+    border: 5px;
+    
+}
+
+header {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 header div {
-    background-color: aqua;
+    width: 30%;
+    text-align: center;
 }

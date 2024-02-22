@@ -1,0 +1,113 @@
+body {
+    background-color: brown;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* C'est quoi un brealpoint : oiunt de repture se réffére à la taille imposée par la fenetre de rendu du navigateur qui fera
+varier propotionellement le rendu visuekl du site web affiché */
+
+/* 
+    Le Media Query est une technique visant à modifier le design d'un site internet en fonction des caractéristiques de l'écran utilisé. C'est un élément important du CSS3. Pour ce faire, on utilise les requêtes multimédias. Une requête multimédia permet d'appliquer des styles CSS en fonction de la présence ou de la valeur des caractéristiques de l'appareil. Les requêtes média peuvent être appliquées de deux manières, notamment :
+
+    En chargeant une feuille de style CSS différente (cependant, cela n'est pas recommandé car il est préférable de centraliser le style CSS autour d'une seule feuille de style) :
+
+    <link rel="stylesheet" href="style.css" /> <!-- Pour tout le monde -->
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+    En écrivant directement les règles dans la feuille de style CSS :
+    Cette technique consiste à utiliser ce qu'on appelle les règles CSS @ : les @rules (prononcées "at-rules") fournissent des instructions sur ce que CSS doit effectuer ou comment il doit se comporter si une condition est satisfaite.
+
+    Ici, on utilise la @media : la règle pour inclure un bloc de propriétés CSS uniquement si une certaine condition est vraie. Les conditions comprennent :
+
+    -> Les types d'écran ou les supports d'affichage, il existe quatre catégories de media types :
+              print : destiné à un support paginé, aux documents vus sur écran en mode aperçu avant impression;
+              screen : pour les appareils dotés d'un écran : ordinateurs, tablettes, mobiles, TV
+              speech : pour les lecteurs d'écran qui “lisent” par synthèse vocale
+              all : tous les types d'appareils
+    -> Les propriétés, comme par exemple la largeur de la zone d'affichage, la hauteur de la zone d'affichage, ou l'orientation du périphérique. */
+
+    /* 
+    En principe, la norme veut que l'on définisse 3 taille d'écrant 
+    
+    Mobile - 0 à < 766px
+    tablet - 768px à < 1024
+    Desktop - les tailles au-dessus
+    */
+
+
+    /* Pour les très grand écrans (xxlarge) -> supérieur à 1400px */
+    @media (min-width:1400px) {
+        body {
+            background-color: pink;
+        }
+    
+        .xsmall, .small, .medium, .large, .xlarge {
+            display: none;
+        }
+    }
+     
+    @media (min-width:1200px) and (max-width:1399px) {
+        body {
+            background-color: teal;
+        }
+        .xsmall, .small, .medium, .large, .xxlarge {
+            display: none;
+        }
+    }
+    
+    @media (min-width:992px) and (max-width:1199px) {
+        body {
+            background-color: khaki;
+        }
+        .xsmall, .small, .medium, .xlarge, .xxlarge {
+            display: none;
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:991px) {
+        body {
+            background-color: purple;
+        }
+        .xsmall, .small, .large, .xlarge, .xxlarge {
+            display: none;
+        }
+    } 
+
+
+    /* pour les petits appareils ( téléphone mobiles : small ) -> écran entre 576px et 767px */
+    @media (min-width:576px) and (max-width:767px) {
+        body {
+            background-color: orange;
+        }
+        .xsmall, .medium, .large, .xlarge, .xxlarge {
+            display: none;
+        }
+    }
+    
+   /* pour les tés petits appareils (xs)-> taille entre 0 et 575px */
+    @media (max-width:575px){
+        body {
+            background-color: green;
+        }
+        .small, .medium, .large, .xlarge, .xxlarge {
+            display: none;
+        }
+    }
+    /*  sur les écrans et quand la largeur de la fenetre est au max 1200px */
+    @media screen and (max-width:1200px) {
+
+    }
+    /* en mode inpression */
+    @media print{
+
+    }
+    /* en mode inpression */
+    @media all and (min-width:1027px) and (max-width:1280) {
+
+    }
+
+    /* sur tout type d'écrans orienté verticalement */
+    @media all and ()
