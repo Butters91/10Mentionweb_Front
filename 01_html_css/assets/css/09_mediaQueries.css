@@ -87,7 +87,7 @@ varier propotionellement le rendu visuekl du site web affiché */
         }
     }
     
-   /* pour les tés petits appareils (xs)-> taille entre 0 et 575px */
+   /* pour les trés petits appareils (xs)-> taille entre 0 et 575px */
     @media (max-width:575px){
         body {
             background-color: green;
