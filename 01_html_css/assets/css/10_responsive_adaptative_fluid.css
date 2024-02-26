@@ -1,0 +1,11 @@
+/* ************************ REST et NORMALIZE ********************** */
+/* 
+    Une page HTML standard sans style déclaré bénéficiera néanmoins d'un ensemble de styles automatiquement appliqués par le navigateur, permettant ainsi de distinguer les différents éléments. 
+    Afin d'initialiser ces valeurs, on a la possibilité de les annuler dans le CSS en sélectionnant chaque élément et en modifiant ses propriétés.
+    Une autre approche consiste à utiliser le reset CSS : https://meyerweb.com/eric/tools/css/reset/
+    ou le mini reset : https://jgthms.com/minireset.css/
+
+*/
+
+
+@import url(reset.css);

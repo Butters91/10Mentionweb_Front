@@ -110,4 +110,11 @@ varier propotionellement le rendu visuekl du site web affiché */
     }
 
     /* sur tout type d'écrans orienté verticalement */
-    @media all and ()
+    @media all and (orientation: portrait){
+
+    }
+
+    /* sur tout type d'écran orrienter horizontallement */
+    @media all and (orientation: landscape){
+        
+    }
