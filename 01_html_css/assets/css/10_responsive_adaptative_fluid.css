@@ -9,3 +9,98 @@
 
 
 @import url(reset.css);
+
+
+/* 
+    Le problème de cette technique, c'est qu'elle annule certains styles par défaut des navigateurs qui sont réellement utiles  et cela  nécessiter plus de travail pour rétablir certains styles de base qui ont été écrasés par le reset.
+*/
+
+
+/*  
+    Normalize.css est une bibliothèque CSS qui vise à rendre les styles des navigateurs plus cohérents et prévisibles en normalisant les styles par défaut des éléments HTML il conserve certains styles par défaut qui sont considérés comme bénéfiques et utiles, tout en corrigeant et en uniformisant d'autres styles pour assurer une cohérence entre les navigateurs.
+    https://necolas.github.io/normalize.css/
+ */
+
+ @import url(normalize.css);
+
+ /* *************************  Responsive Web Designe  ********************************** */
+ /* 
+    Le Responsive Web Design englobe les techniques de conception de contenus internet qui permettent de proposer des contenus auto-adaptables en fonction des interfaces de consultation utilisées par le visiteur
+
+    Sans le cadre du Responsive Web Design, on parle de deux caractéristiques imprtantes: 
+
+    - L'ajustement automatique de la taille des éléments :  une page web, un élément HTML ou une image peut ainsi se redimensionner en fonction de la taille d'écran du terminal utiloisé (ordinateur, tablette, smartphone, etc...)
+    -L'adaptation de l'agencement des  éléments: l'organisation du contenu peut être également automatiquement adapteé
+
+    
+    Le Responsive Web Design est aujourd'hui un incontournable dans le monde du développement web.
+*/
+
+:root {
+    font-size: 65.5%;
+} 
+
+body {
+    font-weight: bold;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 3rem;
+    color: #d04848;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.responsive :nth-child(2) {
+    background-color: #ffc0d9;
+}
+
+.responsive :nth-child(3) {
+    background-color: #d63484;
+}
+
+.responsive :nth-child(4) {
+    background-color: #ff90bc;
+}
+
+.responsive {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.responsive h2 {
+    width: 100%;
+}
+
+.responsive div {
+    width: 33.33%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    
+    .responsive :nth-child(2) .responsive :nth-child(3){
+        width: 50%;
+    }
+    .responsive :nth-child(4) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .responsive div {
+        width: 100%;
+    }
+}
