@@ -1,0 +1,66 @@
+/* Feuille de style avec le reste */
+@import url(reset.css);
+
+/* lient vers goggle fonts pour la typographie */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Questrial&display=swap');
+
+.root{
+    font-size: 62.5%;
+    /* les variable css utilisés */
+    --colo_black: #191919;
+    --color_white: #fff;
+    --font_lora: "lora", serif;
+}
+
+body {
+    background-color: var(--color_black)
+    
+    
+}
+
+a, h1 {
+    font-family: var(--font_lora);
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    /* dans le header j'applique le display avec la valeur flex afin de gérer l'emplacement de mes élément sur l'axe principale 
+    (axe horizontale) et l'axe secondaire (axe verticale) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    border-bottom: 1rem solid rgba(255, 255, 255, 1);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0);
+    padding: 1rem 2rem;
+}
+
+header img {
+    width: 60px;
+}
+
+header > a { 
+    /* j'applique le flex afin de centrer l'image dans l'élément */
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1.8rem;
+    color: gray;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    scale: 1;
+    transform: all linear 0.2;
+
+}
+
+header nav a:hover{
+    color: var(--color_white);
+    scale: 1.2;
+    
+}
