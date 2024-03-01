@@ -1,21 +1,20 @@
-/* Feuille de style avec le reste */
+/* feuille de style avec le reset */
 @import url(reset.css);
+/* lien vers google font pour la typographie */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-/* lient vers goggle fonts pour la typographie */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Questrial&display=swap');
-
-.root{
+:root {
     font-size: 62.5%;
-    /* les variable css utilisés */
-    --colo_black: #191919;
+    --color_black: #191919;
     --color_white: #fff;
     --font_lora: "lora", serif;
+
 }
 
 body {
-    background-color: var(--color_black)
-    
-    
+    background-color: var(--color_black);
+    color: var(--color_white) !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a, h1 {
@@ -23,44 +22,83 @@ a, h1 {
 }
 
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/* *********************header************************ */
 header {
-    /* dans le header j'applique le display avec la valeur flex afin de gérer l'emplacement de mes élément sur l'axe principale 
-    (axe horizontale) et l'axe secondaire (axe verticale) */
+    /* dans le header j'applique le display flex avec la valeur flex afin de pouvoir gérer l'emplacement de mes éléments sur l'axe principale (axe horizontale) et l'axe secondaire (axe verticale) */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #101010;
-    border-bottom: 1rem solid rgba(255, 255, 255, 1);
-    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0);
+    border-bottom: .1rem solid rgba(255, 255, 255 , .1);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, .5);
     padding: 1rem 2rem;
 }
 
-header img {
-    width: 60px;
+header nav {
+    display: flex;
 }
 
-header > a { 
-    /* j'applique le flex afin de centrer l'image dans l'élément */
+header img {
+    width: 50px;
+}
+
+header > a {
+    /* j'applique le flex afin de centrer l'image dans l'éléments */
     display: flex;
     align-items: center;
 }
 
 header nav a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-decoration: none;
     color: gray;
     font-weight: bolder;
     text-transform: uppercase;
     margin-left: 4rem;
-    scale: 1;
-    transform: all linear 0.2;
-
+    /* scale: 1; */
+    transition: all linear 0.2s;
+    /* 
+    https://www.w3schools.com/css/css3_transitions.asp
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed
+    all : la transition s'applique sur toutes les propriétés qui ont les valeurs changées   
+    linear : spécifie un effet de transition avec la même vitesse du début à la fin
+    un délai : (en secondes) pour l'effet de transition. */
 }
 
-header nav a:hover{
+
+header nav a:hover {
     color: var(--color_white);
     scale: 1.2;
+}
+
+/* **********************************************footer*************************************** */
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    padding: 40px;
+    background-color: #101010;
+    border-top: .1rem solid rgba(255, 255, 255 , .1);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, .5);
     
+}
+
+footer a {
+    color: var(--color_white);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    width: 33.33%;
+    align-items: center;
+}
+
+footer ul:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255 , .2);
+    border-right: 1px solid rgba(255, 255, 255 , .2);
 }

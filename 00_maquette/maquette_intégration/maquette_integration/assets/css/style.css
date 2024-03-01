@@ -1,0 +1,152 @@
+/* feuille de style pour la page d'accueil */
+
+main > div, main section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+main > div div, main > section div {
+    width: 100%;
+}
+
+/* Première div dans main */
+main > div:first-child > div:nth-child(1) {
+    background-image: url(../img/s1b1.jpeg);
+}
+
+main > div:first-child > div:nth-child(2) {
+    background-image: url(../img/s1b2.jpeg);
+}
+
+main > div:first-child > div:nth-child(3) {
+    background-image: url(../img/s1b3.jpeg);
+}
+
+main > div:first-child div {
+    margin: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+    box-shadow: .4rem .4rem .8rem rgba(0, 0, 0, 0.5);
+} 
+
+main > div:first-child div a {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    margin: 8rem 0;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    text-transform: uppercase;
+    border-radius: 8px;
+
+}
+
+/* Deuxième partie de main */
+main section {
+    padding: 3rem;
+}
+main section div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+}
+
+main section h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+main section p {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+main section div:nth-child(2) img {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+img, video {
+    width: 100%;
+}
+
+/* Troisieème élément dans main */
+
+main > div:last-child {
+    background-color: #000;
+}
+
+@media screen and (min-width: 991px) {
+    .col-lg-1{
+        width: 8.33%
+    }
+    .col-lg-2{
+        width: 16.68%
+    }
+    .col-lg-3{
+        width: 25%
+    }
+    .col-lg-4{
+        width: 33.33%
+    }
+    .col-lg-5{
+        width: 41.68%
+    }
+    .col-lg-6{
+        width: 50%
+    }
+    .col-lg-7 { 
+        width: 58.333333%;
+    }
+    
+    .col-lg-8 {
+        width: 66.666666%;
+    }
+    
+    .col-lg-9 {
+        width: 75%;
+    }
+    
+    .col-lg-10 {
+        width: 83.333333%;
+    }
+    
+    .col-lg-11 {
+        width: 91.666666%;
+    }
+    
+    .col-lg-12 {
+        width: 100%;
+    }
+    
+    main > div:first-child {
+        justify-content: space-around;
+    }
+    
+    /* ************Deuxième façon de faire********************* */
+    /* avec cette façon de faire il faut changer la classe col-lg-3  */
+    /* main > div:first-child {
+        flex-wrap: nowrap;
+    } */
+
+    main section {
+        justify-content: space-between;
+    }
+    main div:nth-child(3) div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
