@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    font-size: 62.5%;
+    --gris-claire: #ddd;
+    --blanc: #fff;
+    --noir : #000;
+    --ocre : #a55122;
+    --chocolat : #4b2510;
+    --color-text : #333;
+}
+
+body{
+    background-color: var(--gris-claire);
+    color: var(--color-text);
+}
+
+.container {
+    background-color: var(--blanc);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'philosopher', sans-serif;
+    font-size: 2.1rem;
+    color: var(--ocre);
+    font-weight: bolder;
+    padding: 0 0 1.5rem 0;
+
+
+}
+
+nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav a {
+    background-color: var(--gris-claire);
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--noir);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+/* ::after crée un pseudo-élément qui sera le dernier enfant de l'élément sélectionné. Il est souvent utilisé pour ajouter du contenu esthétique à un élément, en utilisant la propriété CSS content */
+
+
+nav a::after {
+
+    content:' -'
+
+}
+
+/* ::before  crée un pseudo-élément qui sera le premier enfant de l'élément ciblé. Généralement utilisé pour ajouter du contenu esthétique à un élément via la propriété CSS content. Par défaut, l'élément créé est de type en-ligne */
+
+nav a::before {
+
+    content:'- '
+    
+}
+
+/* Main */
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    font-size: 1.9rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.7rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+}
+
+aside {
+    /* display: none; */
+}
+
+aside ol {
+    list-style: decimal !important;
+    padding: 2rem;
+}
+
+ol li {
+    /* margin-bottom: .6rem; */
+}
+
+main img{ 
+    width: 100%;
+}
+
+@media screen and (max-width:767.99px) {
+
+    .col-sm-1 {
+        width: 8.333333%;
+    }
+
+    .col-sm-2 {
+        width: 16.666666%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.333333%;
+    }
+
+    .col-sm-1 {
+        width: 41.666666%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.333333%;
+    }
+
+    .col-sm-8 {
+        width: 66.666666%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.333333%;
+    }
+
+    .col-sm-11 {
+        width: 91.666666%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+    
+}
