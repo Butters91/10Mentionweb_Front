@@ -38,6 +38,7 @@ header div {
 header div img {
 
     padding: 2rem;
+   
 }
 
 h1 {
@@ -85,9 +86,11 @@ nav a::before {
     
 }
 
-/* Main */
+
+/* MAIN */
 
 section {
+
     width: 80%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -95,7 +98,7 @@ section {
     flex-wrap: wrap;
 }
 
-section h2 {
+section h2{
     font-size: 1.9rem;
     font-weight: bolder;
     padding: 1rem 0;
@@ -106,25 +109,34 @@ section p {
     font-size: 1.7rem;
     padding: 2rem 0;
     line-height: 2rem;
+
 }
 
-aside {
-    /* display: none; */
+
+
+aside{
+    display: none;
 }
 
 aside ol {
-    list-style: decimal !important;
+    list-style: decimal!important;
     padding: 2rem;
 }
 
-ol li {
-    /* margin-bottom: .6rem; */
+ol li{
+    margin-bottom: .6rem ;
 }
+
 
 main img{ 
-    width: 100%;
+    /* width: 100%; */
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
 @media screen and (max-width:767.99px) {
 
     .col-sm-1 {
@@ -176,3 +188,226 @@ main img{
     }
     
 }
+
+@media screen and (min-width:768px) {
+
+    .col-md-1 {
+        width: 8.333333%;
+    }
+
+    .col-md-2 {
+        width: 16.666666%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.333333%;
+    }
+
+    .col-md-1 {
+        width: 41.666666%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.333333%;
+    }
+
+    .col-md-8 {
+        width: 66.666666%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.333333%;
+    }
+
+    .col-md-11 {
+        width: 91.666666%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        justify-content: center;
+        
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    main {
+        border-bottom: 1px var(--gris-claire) solid;
+    }
+
+    section h2 {
+        padding: 2.5rem;
+    }
+
+    section  {
+       justify-content: center;
+      
+    }
+
+    section p {
+        text-align: left;
+    }
+
+    aside {
+        display: flex;
+        flex-wrap: wrap;;
+        padding: 3rem;
+        justify-content: space-between;
+    }
+
+    aside h3 {
+        font-size: 1.7rem;
+        color: var(--chocolat);
+        font-weight: bold;
+        padding: 0 0 2rem 1rem;
+        border-bottom: 1px var(--gris-claire) solid;
+    }
+    
+    aside ol {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+    hr {
+        margin-bottom: 1rem;
+    }
+
+    aside div:nth-child(2) div {
+        padding-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .col-xl-1 {
+        width: 8.333333%;
+    }
+
+    .col-xl-2 {
+        width: 16.666666%;
+    }
+
+    .col-xl-3 {
+        width: 25%;
+    }
+
+    .col-xl-4 {
+        width: 33.333333%;
+    }
+
+    .col-xl-1 {
+        width: 41.666666%;
+    }
+
+    .col-xl-6 {
+        width: 50%;
+    }
+
+    .col-xl-7 {
+        width: 58.333333%;
+    }
+
+    .col-xl-8 {
+        width: 66.666666%;
+    }
+
+    .col-xl-9 {
+        width: 75%;
+    }
+
+    .col-xl-10 {
+        width: 83.333333%;
+    }
+
+    .col-xl-11 {
+        width: 91.666666%;
+    }
+
+    .col-xl-12 {
+        width: 100%;
+    }
+
+    .col-xl-12 {
+        width: 100%;
+    }
+
+   
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        background-color: transparent;
+    }
+
+    header div {
+       flex-direction: row;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0;
+
+    }
+
+    main {
+        border-top: 1px solid var(--gris-claire);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    section + hr { /*C'est un sélecteur adjacent. Il permert de ne sélectionner que l'élément qui est immédiatement précédé par le premier élément ciblé*/
+        display: none;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around;
+        height: 771px;
+         */
+    }
+    
+    aside div {
+        margin-bottom: 10rem;
+    }
+
+    aside ol {
+        font-size: 2rem;
+    }
+   
+
+}
+
+
+
