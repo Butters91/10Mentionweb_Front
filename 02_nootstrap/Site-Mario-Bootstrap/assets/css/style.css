@@ -14,3 +14,12 @@ img {
     width: 100%;
     
 }
+
+* {
+    box-sizing: border-box !important;
+}
+
+table [classe*="col-lg-6"] {
+    /*est un sélecteur CSS qui cible tous les élément qui ont une classe une classe contenant le texte "col"*/
+    width: 50%;
+}
