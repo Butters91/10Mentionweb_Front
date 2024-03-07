@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box !important;
+}
+
+header > div {
+    background-size: cover;
+    background-image: url(../images/hero-image.jpg);
+    padding: 50px;
+    margin: 50%;
+}

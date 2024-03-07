@@ -1,0 +1,26 @@
+INDEX.HTML
+
+Our goal is to inspire Tallahasse to write 1,000,000 lines of code_
+All over the country, people are taking the hour of code challenge issued by CODE.org.Millions of lines of code are beingwritten. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code_ 
+Learn more >>
+
+Who we are
+We are MASSIVE Academy. We aim to improve education through both methods -effective project-based learning - and material - by teaching skills that are applicatble to improving your life today.
+
+get involved
+
+(icone person-fill)
+students
+Want to learn how to code ? Want to help us get to 1,000,000 lines ? Click the button below and we'll let you know how to get involved.
+Start Learning >>
+
+(icone pencil-fill)
+educators
+Want to bring this initiative to your school or institution ? Awesome ! Click the button below and we'll make it happen.
+Join The Initiative >>
+
+(icone cash)
+sponsors
+We love all the support we get to help host events and empower lives with coding knowledge. Click to get involved. 
+Give Support >>
+
