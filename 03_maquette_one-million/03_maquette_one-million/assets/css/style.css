@@ -2,9 +2,36 @@
     box-sizing: border-box !important;
 }
 
-header > div {
+/* .div img {
     background-size: cover;
     background-image: url(../images/hero-image.jpg);
     padding: 50px;
-    margin: 50%;
+   
+} */
+.container {
+    background-image: url(../images/hero-image.jpg);
+    background-size: cover;
+    padding: 100px;
+   
+} 
+
+h2, h3, h4, h5 {
+    color:  #e74c3c;
+}
+
+span {
+    color: #e74c3c;
+}
+
+section:nth-child(3) {
+    background-color: ghostwhite;
+}
+
+hr {
+    width: 17%;
+    height: var();
+}
+
+p {
+    padding-inline: 100px;
 }
