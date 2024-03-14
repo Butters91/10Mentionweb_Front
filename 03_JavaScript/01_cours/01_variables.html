@@ -6,9 +6,30 @@
     <title>Les variables en JS</title>
 </head>
 <body>
-    <!-- Script directement dans le document HTML -->
-    <!-- Il faut les balises ouvrantes et fermantes <script> à la fin du document avant la fermeture de la balise body -->
 
+    <!--
+        JavaScript a été créé en 1995 par Brendan Eich chez Netscape sous le nom de Mocha, puis renommé LiveScript, pour finalement devenir JavaScript.
+        Son adoption rapide en tant que langage de programmation côté client a été facilitée par sa prise en charge par Netscape Navigator.
+        En 1997, JavaScript est standardisé sous le nom d'ECMAScript par Ecma International.
+        ECMAScript est le langage de script sur lequel JavaScript est basé. Ecma International a pour tâche la standardisation d'ECMAScript.
+        https://ecma-international.org/publications-and-standards/standards/?order=last-change
+        https://www.w3schools.com/js/js_versions.asp
+        Il permet de rendre les pages web dynamiques et interactives en ajoutant des fonctionnalités telles que des animations, des formulaires dynamiques, des mises à jour de contenu sans rechargement de page, etc.
+
+        Contrairement aux langages de programmation côté serveur comme Python ou Java, JavaScript est interprété côté client par le navigateur web.
+        JavaScript est un langage de script, ce qui signifie qu'il est exécuté ligne par ligne et qu'il est particulièrement adapté aux applications web interactives
+
+        Les instructions JavaScript sont généralement écrites ligne par ligne et séparées par des points-virgules.
+        Un programme JavaScript peut être inclus dans une balise <script> dans le code HTML ou peut être stocké dans des fichiers externes avec l'extension ".js"
+
+     -->
+
+
+    <!-- 
+        Script directe dans le document html :
+            * Dans la balise head : pratique déconseillée : 
+            * Avant la fermeture de la balise body : pratique recommandée permet de charger le contenu HTML avant de commencer à exécuter les scriptsdonc permet d'optimiser la vitesse de chargement de la page et garantir un accès rapide aux éléments DOM.
+    -->
 
 
         <script>
@@ -32,16 +53,42 @@
                 On initialise une variable avec so nom (de votre choix) puis on lui attribue une valeur
                 Pour déclarer une variable en JavaScrip, on utilise un préfixe : const, let ou var
                 ATTENTION : on utilise les préfixe seulement lors de l'initialisation
-             */
+            */
 
-             const TEST ="HELLO World";
-             console.log(TEST); // Consol.log permet d'afficher une information que je viens de saisir ou une erreur produite lors de la programation.
+            const TEST ="HELLO World";
+            console.log(TEST); // Consol.log permet d'afficher une information que je viens de saisir ou une erreur produite lors de la programation.
              
-             // La déclaration const permet de créer une constante accessible uniquement en lecture. Sa valeur ne pourra pas être modifiée par des réaffectations ultérieures. Une constante ne peut pas être déclarée à nouveau.
+            // La déclaration const permet de créer une constante accessible uniquement en lecture. Sa valeur ne pourra pas être modifiée par des réaffectations ultérieures. Une constante ne peut pas être déclarée à nouveau.
             // Dans la convention, on écrit les constantes en majuscules pour les reconnaître.
 
-            TEST ="HELLO GUYS";
+            // TEST ="HELLO GUYS";
             console.log(TEST);
+            // Provoque une erreur : une constante ne peut etre modifée.
+
+            //////////////////
+            // VAR
+            //////////////////
+
+            var test1 =10;
+            var test2 ="10";
+            // console.log(test1);
+            // console.log(test2);
+
+            // var est globale, ce qui signifie qu'elle est accessible dans toute la fonction ou le script où elle est déclarée.
+            // Vous pouvez redéclarer une variable avec var dans le même contexte sans erreur. Cependant, cela peut conduire à des erreurs difficiles à détecter dans votre code en raison de la portée de var.
+
+
+            ////////////////////////
+            // LET
+            ////////////////////////
+
+            let test3 = "colombbus";
+            // console.log(test3);
+            test3 = "10mentionweb";
+            console.log(test3);
+
+            // var est globale, ce qui signifie qu'elle est accessible dans toute la fonction ou le script où elle est déclarée.
+            // Vous pouvez redéclarer une variable avec var dans le même contexte sans erreur. Cependant, cela peut conduire à des erreurs difficiles à détecter dans votre code en raison de la portée de var.
 
 
         </script>

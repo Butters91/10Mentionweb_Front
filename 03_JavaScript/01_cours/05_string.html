@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les string en JS</title>
+</head>
+<body>
+
+
+    <script>
+
+        // ----------------
+
+            //  LES STRING ET CONCATENATION 
+        
+        // -----------------
+
+        // Nous pouvons initialiser une chaine de caractère de plusieur façon
+
+        // avec des guilemets simples ( simple quotes)
+        const PRENOM = "Adama"
+        // avec des guillemets doubles ( doubles quotes)
+        const MON = "CISSOKO"
+
+        // avec simple quoutes et backslash (ou autislash) : permet d'echapper un carractére dans string
+        const ADRESSE = 'J\'habite à Saint-Michel-sur-Orge'
+
+        // Je suis Adama CISSOKO, j'habite à saint-Michel-sur-Orge
+        document.write("je suis " + PRENOM + " " + NOM + " , " + ADRESSE + '<br>');
+
+        // INITIALISER DES CONSTANTE AVEC UNE SEUL PREFIXE
+        const PRENOM2 = "Marc" , NOM2 = "ISAAC";
+
+        document.write("je suis " + PRENOM2 + " " + NOM2 + '<br>');
+
+        // avec les backquotes (--) (altGr + 7)
+        // Bonjour vous etes les bienvenue : Marc et Sahar
+        let bienvenue =  `Bonjour vous etes les bienvenue : ${PRENOM} et ${PRENOM}`;
+
+
+        //Exercice 
+        // realiser un prompt demandant son âge à son utilisateur, récupérer cette donnée et l'utiliser pour afficher ce message:
+            // vous avez XX ans!
+
+        let age = prompt('Entre votre age !');
+        document.write('Vous avez : ${age} ans <br>');
+
+        //////////////
+        // le "=" au niveau des sring
+
+        let fruits = "Pomme";
+        document.write(fruits);
+        fruits += 'fraise';
+        fruits += 'Mange';
+        document.write(fruit);
+        // Contrairement au "="d'affection qui remplace la valeur de la variable, j'utilise ici += qui va ajouter la nouvelle valeur à la valeur de la variable
+
+        //-----------
+        // convertir un string vers number 
+        // ----------
+
+
+
+        document.write('<br>');
+        let unNombre = "24";
+        document.write(typeof(unNombre));
+        // pour convertir le string "24" en nombre 24
+        document.write('<br>');
+        unNombre = persfloat(unNombre);
+        document.write(typeof(unNombre));
+
+        //--------------------------
+            // Conertir un number vers string
+        //-------------------------
+        document.write('<br>');
+            unNombre = unNombre.toString();// toString permet de convertir un nombre entier ou décimale en string
+            document.write(typeof(unNombre));
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
