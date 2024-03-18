@@ -248,6 +248,100 @@
 
 
 
+        
+        //------------------------------------
+                // Les propriétés et les méthodes des tableaux
+         //------------------------------------
+        
+
+         let couleurs = ["Rose", "Rouge", "Noir", "bleu"];
+         console.log(couleurs.length); //length est une propriété qui permet d'afficher le nombre d'jélément que contient mon tableau.
+        //  Je stock la valeur dans variable
+         let longueurTableau = couleurs.length;
+         console.log(longueurTableau);
+
+
+        //------------------------------------
+                // Ajouter un élément en fin de tableau
+         //------------------------------------
+
+                couleurs.push("Violet");
+                console.log(couleurs);
+                console.log(couleurs.length);
+
+
+         //------------------------------------
+                // Supprimer le dernier élément de nom tableau
+         //------------------------------------
+
+
+                couleurs.pop();
+                console.log(couleurs);
+                console.log(couleurs.length);
+
+
+        //------------------------------------
+                // Ajouter un ou plusieurs élément au début du tableau
+         //------------------------------------
+
+
+                couleurs.unshift("Vert", "Orange");
+                console.log(couleurs);
+                console.log(couleurs.length);
+
+
+        //------------------------------------
+                // Ajouter supprimer ou remplacer des élément n'importe ou dans mon tableau
+         //------------------------------------
+
+
+            // La méthode splice() va prendre trois arguments :
+            // - une position de départ : à partir d'où commence le changement
+            // - le nombre d'éléments à remplacer ou à enlever
+            // - Les éléments à ajouter au tableau
+
+                couleurs.splice(1,0,"Jaune","Blanc");
+                console.log(couleurs);
+                console.log(couleurs.length);
+
+            /*
+            Pour découper un tableau et en créer un autre, j'utilise la méthode slice()
+            // premier argument : La position de départ : où doit commencer la découpe de notre tableau de départ/ si la position passée est un nombre négatif -> le début de la découpe sera calculé à partir de la fin du tableau de départ/ si aucune position de départ n'est passée, la découpe commencera depuis le début du tableau de départ.
+            // Deuxième argument : la position où doit s'arrêter la découpe du tableau de départ/ si la position passée est un nombre négatif, alors la fin de la découpe sera calculée à partir de la fin du tableau de départ / si aucune position de fin n'est passée, alors on récupérera le tableau de départ jusqu'à la fin pour créer notre nouveau tableau
+            */
+
+            
+            let joursSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+            let jourTravailSahar = joursSemaine.slice(0,5); // le nouveau tableau créé ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+            console.log(jourTravailSahar);
+            console.log(joursSemaine);
+
+            let joursSemaineColombus = jourTravailSahar.splice(2,1);
+            console.log(joursSemaineColombus);
+            
+            // Pour retourner une chaine de caractère ren concaténant les différentes valeurs d'un tableau
+            let concatJoursSemaine = joursSemaine.join('-')
+            document.write(concatJoursSemaine);
+ 
+            // Pour déterminer si un tableau contient une valeur pécise
+
+            let verif =  joursSemaine.includes('Jeudi'); //ATTENTION : la méthode includes est sensible à la casse
+                console.log(verif);
+                console.log(typeof verif);
+
+            // Pour fusionner plusieurs tableaux entre eux et créer un nouveau
+
+            let totalTableau = joursSemaine.concat(couleur,myArray,myArray2)
+            document.write(totalTableau);
+            console.log(totalTableau);
+                
+
+
+
+
+
+
 
 
 
