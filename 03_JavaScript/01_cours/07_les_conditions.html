@@ -20,7 +20,7 @@
             >= supérieur ou égale 
             <= inférieur ou égale
             ==  pour faire une comparaison de valeur // Il permet de vérifier que les VALUERS de 2 variables sont identiques
-            === pour faire une sompariason de valeur et de type // signifie "STRICTEMENT Égale À" // Il permet de vérifier la VALEUR ET le TYPE 
+            === pour faire une compariason de valeur et de type // signifie "STRICTEMENT Égale À" // Il permet de vérifier la VALEUR ET le TYPE 
             != différent de en valeur 
             !== STRICTEMENT différent de (VALEUR ET TYPE)
         */
@@ -172,6 +172,197 @@
         else {
             document.write("Vous êtes QUI ?");
         }
+
+
+                        // exercise-------------------------------------------
+
+        
+        document.write(br);
+
+        let a= 10; b= 5; c= 2;
+
+        if (a > b) {
+            document.write("a est bien supérieur a b");
+        } //TRUE
+
+        else {
+            document.write("a est inférieur a b");
+        }
+        
+        document.write(br);
+
+        if (a > b && b > c ) {
+            document.write("Ok pour les deux conditions")
+        } //TRUE && true => false
+
+        else {
+            document.write("Une de ces deux conditions est fausse")
+        }
+        
+
+        document.write(br)
+
+        if (a == 9 || b < 9) {
+           
+            document.write ("Ok pour au moins une des deux condition")
+        }
+
+        else {
+            document.write("Les deux conditions fausse")
+        }
+
+
+
+        document.write(br)
+        if (a == 8 ) {
+            document.write("a est égale a 8");
+        }
+        
+        else if ( a != 10) {
+            document.write("a est different de 10")
+
+        }
+
+        else {
+            document.write("tout le monde est faux")
+        }
+
+        //---------------------------------------------------------------
+        document.write(br)
+        if (a == 10 ) {
+            document.write("a est égale a 10");
+        } //true
+        
+        else if ( a > b ) {
+            document.write("a est suppérieur a b")
+
+        } //true
+
+        else {
+            document.write("tout le monde est faux")
+        }
+
+
+        document.write(br)
+        //  Avec que des if les conditions sont toutes éxécutés est dés que l'une des conditions est vrais le résultat est affiché
+        
+        if (a == 10 ) {
+            document.write("a est égale a 10 <br>");
+        } //true
+        
+         if ( a > b ) {
+            document.write("a est suppérieur a b <br>")
+
+        } //true
+
+        if (a < b ) {
+            document.write("tout le monde est faux <br>s")
+        }//false
+
+
+
+        //--------------------------------------------------------
+        // La condition termaire nous permet de faire une vérification mais sur une seule ligne
+
+
+        let meteo = "pluie";
+
+        // if (meteo == "pluie") {
+        //     document.write("Prend un parapluie <br>")
+        // }
+
+        // else {
+        //     document.write("Mets un short <br>")
+        // }
+
+        (meteo == "pluie") ? document.write("Prend un parapluie <br>"): document.write("Mets un short <br>") ;
+
+        // Est-ce que meteo est égale à pluie ? si oui, prends un parapluie, sinon : mets un short
+
+        let termaire =  (meteo == "pluie") ? "prend un parapluie <br>" : "Mets un short <br>" ; 
+        document.write(termaire)
+
+        let monAge  = 18;
+
+        (monAge > "15") ? document.write("Je suis mineur <br>") : document.write("Je suis majeur <br>") ;
+
+        // let monAge = prompt("Entrez votre age !");
+        // document.write ((monAge>=18) ?"Vous etes majeurs " : "Vous etes mineur");
+
+
+       
+        document.write(br);
+        
+        // La condition switch
+
+        let valeur = 5 + 10;
+        switch (valeur) {
+            case 5:
+                document.write("La valeur est égale à 5 <br>")
+                break;
+            case 10:
+                document.write("La valeur est égale à 10 <br>")
+                break;
+            case 1:
+                document.write("La valeur est égale à 15 <br>")
+                break;
+        
+            default:
+                document.write("La valeur est indeterminée <br>")
+                break;
+        }
+        //----------------------------------------------
+
+        let jour = "Mercredi";
+
+        // switch (jour) {
+        //     case "Lundi":
+        //         document.write(" Mardi <br>")
+        //         break;
+        //     case "Mardi":
+        //         document.write("Mercredi <br>")
+        //         break;
+        //     case "Mercredi":
+        //         document.write("Jeudi <br>")
+        //         break;
+        //     case "Jeudi":
+        //         document.write("Vendredi <br>")
+        //         break;
+        //     case "Vendredi":
+        //         document.write("Samedi <br>")
+        //         break;
+        
+        //     default:
+        //         document.write("Dimanche <br>")
+        //         break;
+        // }
+
+        if (jour == "Lundi") {
+
+            document.write("Mardi <br>")
+            
+        } 
+        
+        else if (jour == "mardi") {
+
+            document.write("Mercredi <br>")
+        }
+
+        else if (jour == "jeudi") {
+
+            document.write("Vendredi <br>")
+        }
+
+        
+        else if (jour == "vendredi") {
+
+            document.write("same <br>")
+        }
+
+
+      
+
+
 
     </script>
 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les boucles en JS</title>
+</head>
+<body>
+    
+
+    <Script>
+
+        // Les boucles nous permettent d'exécuter une ou plusieurs instructions un certain nombre de fois
+        // Une boucle respecte une condition
+        // Tant que cette condition est respectée, nous allons exécuter des instructions en boucle.
+        // La plupart du temps, nous utilisons les boucles pour parcourir chaque élément d'un tableau
+        // Il y a différents types de boucles, les plus utilisées sont la boucle "FOR" et la boucle "WHILE"
+
+        //----------------------------------------
+            // Boucle for
+        //----------------------------------------
+        
+        /*
+            SYNTAXE
+                for(3 arguments : initialisation, condition de conttinuité ; l'incrémentation){
+
+                    code à exécuter
+
+                }
+
+
+        */
+
+        // i = 0    j'initialise le départ de la boucle à 0
+        // i <=   tant que la valeur de i est inférieure ou égale à 10
+        // i++    j'incrémente un tour de boucle
+        // En gros je donne l'instruction de faire un tour de boucle supplémentaire tant que la valeur de i n'est pas égale ou supérieure à 10
+
+
+
+        for(let i = 0 ; i < 10 ; i += 2 ) {
+
+            document.write(`<p> ${i} <p> `);
+
+        }
+
+        // je boucle sur un tableau 
+
+        let jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
+        document.write(jours[0]);
+        document.write(jours[1]);
+        document.write(jours[2]);
+        document.write(jours[3]);
+        document.write(jours[4]);
+
+
+        for (let i = 0; i <= jours.length; i++) {
+
+            document.write(`<p> ${jours[i]} <p> `);
+        }
+
+         //----------------------------------------
+            // Boucle while (tant que)
+        //----------------------------------------
+
+
+         /*
+            SYNTAXE
+
+                // initialisation de la variable
+               while(expressio qui vaut ou false){
+                
+                code à éxécuter tant que l'expression vaut true
+
+                // incrémentation
+
+               }
+
+                }
+
+
+        */
+
+        // let j = 0;
+        // while (j <= 5) { // tant que j est inférieur ou égale a 5
+        //     document.write(` ${j} /  `) // j'exécute l'instruction
+            
+        //     j++ // a chaque tour de boucle, j'incrémente la variable
+        // }
+
+
+        // Exercice 5
+        /*
+            Déclaration deux tableaux : 
+            tab1 qui contient 5 noms
+            tab2 qui contient 5 personnes 
+        Aficchicher en utilisant une boucle les noms et prénom associés dans  un document write
+        */
+
+        let tab1 = ["Pierrard", "Cissoko", "Ferchichi", "Monteiro", "Poitier",]
+        let tab2 = ["adama","pascal", "kaais", "fabien", "gary",]
+        let tab3 = [25,30,40,37,22]
+
+       for (let a = 0; index < array.length; index++) {
+        const element = array[index];
+         for (let a = 0; a)
+       }
+
+    </Script>
+
+
+
+
+
+
+
+</body>
+</html>
