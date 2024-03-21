@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise en JS</title>
+</head>
+<body>
+
+    <script>
+
+        // Exercice 1 
+        // écrire le code invitant l'utilisateur à saisir d'abord son nom et ensuite son prénom dans 2 boîtes de dialogue successives
+        // afficher ensuite dans une autre boîte de dialogue le nom et le prénom de l'utilisateur
+        // Attention à bien respecter les espaces entre les mots dans le message final.
+
+        let lastName = prompt("Quel est votre nom ?");
+        let firstName = prompt("Quel est votre prenom");
+        alert(fersName + " " + lastName)
+
+
+
+// Exercice 2
+        // Ecrivez un programme js qui fait saisir un prix hors taxes à l'utilisateur, puis qui affiche le prix TTC correspondant en se basant sur un taux de TVA à 20%
+        // Vous pouvez effectuer l'affichage dans la console, dans un pop-up ou sur la page directement.
+        //INDICE :multiplier le prix HT par 1,20 pour obtenir le prix TTC.
+
+        let ht = prompt("Veuillez saisir le prix Hors-Taxe : ");
+        let taxe = 1.20 ;
+        let prixT = prixHt * taxe;
+        alert(prixT);
+        document.write(prixT);
+      
+        
+        
+
+
+// Exercice 3
+        // Ecrivez un programme qui fait saisir une température en degrés celsius, puis affiche le résultat de sa conversion en degrés fahrenheit.
+        // Rappel : en informatique, la virgule s'écrit avec un point.
+        // INDICE : // [°F] = [°C] x 9/5 + 32.
+
+        let temperatureCelsius = prompt("la température en degrès celsieus : ");
+
+        let temperatureFahrenheit = temperatureCelsius * 9/5 + 32 ;
+        alert(temperatureFahrenheit);
+        
+        document.write(br)
+       
+
+
+        // J'arrive sur un Espace sécurisé au moyen du prénom et de l'âge.
+        // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront au préalable stocké dans des variables prenom et age).
+        //  En cas d'echec, une alerte m'informe du problème.
+        //  Si tout se passe bien, un message de bienvenue m'accueille.
+
+        let ageSemir = 40;
+        let prenomSemir = "semir"
+
+        // let age = prompt("Veuillez saisir votre age");
+        // let prenom = prompt("Veuillez saisir votre prénom");
+
+        let age = perseInt(prompt("Veuillez saisir votre age"));
+
+        let prenom = prompt("Veuillez saisir votre prénom"). toLowerCase();
+
+        console.log(typeof prenom);
+
+        if (prenom == prenomSemir && age === ageSemir) {
+
+            alert("Bienvenu Semir");
+            
+        } // je vérifie si mes deux conditions sont vrai
+        
+        else {
+            alert ("Verifiez vos informations")
+            
+        }
+
+       
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
