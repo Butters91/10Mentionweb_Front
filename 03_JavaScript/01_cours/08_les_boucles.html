@@ -38,26 +38,26 @@
 
 
 
-        for(let i = 0 ; i < 10 ; i += 2 ) {
+        // for(let i = 0 ; i < 10 ; i += 2 ) {
 
-            document.write(`<p> ${i} <p> `);
+        //     document.write(`<p> ${i} <p> `);
 
-        }
+        // }
 
         // je boucle sur un tableau 
 
-        let jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
-        document.write(jours[0]);
-        document.write(jours[1]);
-        document.write(jours[2]);
-        document.write(jours[3]);
-        document.write(jours[4]);
+        // let jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
+        // document.write(jours[0]);
+        // document.write(jours[1]);
+        // document.write(jours[2]);
+        // document.write(jours[3]);
+        // document.write(jours[4]);
 
 
-        for (let i = 0; i <= jours.length; i++) {
+        // for (let i = 0; i <= jours.length; i++) {
 
-            document.write(`<p> ${jours[i]} <p> `);
-        }
+        //     document.write(`<p> ${jours[i]} <p> `);
+        // }
 
          //----------------------------------------
             // Boucle while (tant que)
@@ -89,23 +89,177 @@
         // }
 
 
-        // Exercice 5
-        /*
-            Déclaration deux tableaux : 
-            tab1 qui contient 5 noms
-            tab2 qui contient 5 personnes 
-        Aficchicher en utilisant une boucle les noms et prénom associés dans  un document write
+        
+        // Exercice 5 
+        /* 
+            Déclarer deux tableaux :
+                tab1 qui contient 5 noms
+                tab2 qui contient 5 prenoms
+                tab3 qui contient 5 âges
+            Afficher en utilisant une boucle les noms et prénoms associés dans un document write
+        
         */
 
-        let tab1 = ["Pierrard", "Cissoko", "Ferchichi", "Monteiro", "Poitier",]
-        let tab2 = ["adama","pascal", "kaais", "fabien", "gary",]
-        let tab3 = [25,30,40,37,22]
+    //     let tab1 = ["Pierrard", "Cissoko", "Ferchichi", "Monteiro", "Poitier",]; // 5 élément tab1.lengyh = 5
+    //                     //0         1           2           3           4
+    //     let tab2 = ["adama","pascal", "kaais", "fabien", "gary",]
+    //     let tab3 = [100,, 50, 75, 200, 5];
 
-       for (let a = 0; index < array.length; index++) {
-        const element = array[index];
-         for (let a = 0; a)
-       }
+    // //   for (let s=o; s<=5; s++) {
+    // //     document.write(` ${tab1[s]}  ${tab2[s]} ${tab3[s]} <br>`)
+    // //   }
 
+    //     //   Deuxième façon de faire 
+
+    //     let tab4 = [tab1, tab2, tab3];
+            // document.write( ` ${tab1[0]} ${tab2[0]} <br> `)
+    //     // document.write( ` ${tab1[1]} ${tab2[1]} <br> `)
+    //     for (let k=0; k<tab[0].length; k++) {
+    //         document.write(` ${tab4[0][k]}  ${tab4[1][k]} ${tab4[2][k]} <br>`)
+    //     }
+
+
+     // Exercice 6
+
+    /*
+            Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+            En utilisant le boucle for
+
+
+            Le manège démarre
+            C'est le tour numéro 1
+            C'est le tour numéro 2
+            ...
+            C'est le tour numéro 10
+            Le manège s'arrête
+    */
+        
+
+        // for (let t = 0; t <= 10; t++) {
+            
+        //     if (t < 2) {
+        //         document.write(" le manège démarre" + "<br>")
+        //     }
+
+        //     if (t <= 10 ) {
+        //         document.write ( "C'est le tour n°" + t + "<br>")
+        //     }
+
+        //     if (t > 9 ) {
+        //         document.write("le manège s'arréte")
+        //     }
+        // }
+
+
+        // for ( let i = 0; i <= 11; i++) {
+            
+        //     if (i == 11) {
+
+        //         document.write("C'est fini, le tour de manège est <strong>terminés</strong> <br>")
+        //     }
+
+        //     else if (i == 0 ) {
+        //         document.write("le manège<strong>démarre</strong> <br>")
+        //     }
+
+        //     else {
+        //         document.write(`C'est le tour de ma${i} `)
+        //     }
+        // }
+
+
+
+        // Exercice 7
+        /* 
+            Créer un script qui permet de :
+                - récupérer la moyenne de BAC à votre utilisateur
+                - vérifier si l'utilisateur a bien renseigner un nombre, 
+                si un nombre :
+                    => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+                    => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+                    => si la moyenne et entre 12 et 20 -> afficher Reçu avec mention ! :) 
+                    => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+                Si ce n'est pas un nombre :
+                    =>afficher  "Vous n\avez pas saisi de nombre !"   
+        */
+
+            let moyenne = prompt("vos mayenne");
+
+            if (isNaN(moyenne))  // si un nombre
+            
+            if (moyenne >= 0 && moyenne < 10) {
+
+                document.write("tu es recalé") 
+
+            } else if (moyenne >= 10 && moyenne <= 11) {
+
+                document.write("tu passe, sans mention !")
+
+            }else if (moyenne >= 12 && moyenne < 20 ) {
+
+                document.write("Reçu avec mention")
+
+            } else if (moyenne <0 || moyenne > 20) {
+                document.write("La moyenne doit être comprise entre 0 et 20 !")
+            } else {
+
+                document.write("Vous n\avez pas saisi de nombre !")
+
+            }
+
+            
+
+
+            
+            
+        
+
+ 
+
+
+        // Exercice 8
+        /* 
+
+            Créer un script qui permet de :
+                récuperer un nombre de l'utilsateur, 
+                le nombre doit être différent de 0 et positif
+                vérifier et afficher sur la page si ce nombre ainsi que ceux qui le suivent jusqu'au 10.
+                Si ce n'est pas un nombre :
+                    => afficher  "Vous n'avez pas saisi de nombre !"  
+                si un nombre :
+                    => si un nombre pair -> affiche " le nombre est pair"
+                    => si un nombre impair -> affiche " le nombre est impair"
+
+
+            créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le script vérifiera d'abord si le nombre est différent de zéro et s'il est positif. Ensuite, il affichera sur la page web si ce nombre est pair ou impair, ainsi que pour les neuf nombres suivants jusqu'à 10.
+            
+            
+        */
+
+            
+
+
+
+
+        //Exercice 9
+
+        // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+
+
+        //Exercice 10
+
+        /* 
+            Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
+            il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
+            Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+            il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
+        */
+
+
+
+
+
+        
     </Script>
 
 

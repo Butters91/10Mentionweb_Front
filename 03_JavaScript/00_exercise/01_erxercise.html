@@ -1,54 +1,55 @@
+<> ShareMyCode.io
+Ajouter un code
+Connexion
+Inscription
+Voici votre URL de partage https://sharemycode.io/c/f843667 (Cliquer pour copier)
+Nom du fichier : index.html
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise en JS</title>
+    <title>Exercices</title>
 </head>
 <body>
 
     <script>
-
         // Exercice 1 
         // écrire le code invitant l'utilisateur à saisir d'abord son nom et ensuite son prénom dans 2 boîtes de dialogue successives
         // afficher ensuite dans une autre boîte de dialogue le nom et le prénom de l'utilisateur
         // Attention à bien respecter les espaces entre les mots dans le message final.
 
-        let lastName = prompt("Quel est votre nom ?");
-        let firstName = prompt("Quel est votre prenom");
-        alert(fersName + " " + lastName)
+        // let lastName = prompt("Quel est votre nom ?");
+        // let firstName = prompt("Quel est votre prenom ?");
+        // alert(firstName + " " + lastName);
+        // alert("Bonjour : " + firstName + " " + lastName);
+        // alert(` Bonjour ${firstName} ${lastName} ! `);
 
-
-
-// Exercice 2
+        
+        // Exercice 2
         // Ecrivez un programme js qui fait saisir un prix hors taxes à l'utilisateur, puis qui affiche le prix TTC correspondant en se basant sur un taux de TVA à 20%
         // Vous pouvez effectuer l'affichage dans la console, dans un pop-up ou sur la page directement.
         //INDICE :multiplier le prix HT par 1,20 pour obtenir le prix TTC.
 
-        let ht = prompt("Veuillez saisir le prix Hors-Taxe : ");
-        let taxe = 1.20 ;
-        let prixT = prixHt * taxe;
-        alert(prixT);
-        document.write(prixT);
-      
-        
-        
+        // let prixHt = prompt("Veuillez saisir le prix Hors-Taxe : ");
+        // let taxe = 1.20 ;
+        // let prixT = prixHt * taxe;
+        // alert(prixT);
+        // document.write(prixT);
 
 
-// Exercice 3
+        // Exercice 3
         // Ecrivez un programme qui fait saisir une température en degrés celsius, puis affiche le résultat de sa conversion en degrés fahrenheit.
         // Rappel : en informatique, la virgule s'écrit avec un point.
         // INDICE : // [°F] = [°C] x 9/5 + 32.
 
-        let temperatureCelsius = prompt("la température en degrès celsieus : ");
-
-        let temperatureFahrenheit = temperatureCelsius * 9/5 + 32 ;
-        alert(temperatureFahrenheit);
-        
-        document.write(br)
-       
+        // let temperatureCelsius = prompt("La température en degrés celsius : ");
+        // let temperatureFahrenheit = temperatureCelsius * 9/5 + 32 ;
+        // alert(temperatureFahrenheit);
 
 
+        // Exercice 4
         // J'arrive sur un Espace sécurisé au moyen du prénom et de l'âge.
         // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront au préalable stocké dans des variables prenom et age).
         //  En cas d'echec, une alerte m'informe du problème.
@@ -57,28 +58,229 @@
         let ageSemir = 40;
         let prenomSemir = "semir"
 
-        // let age = prompt("Veuillez saisir votre age");
-        // let prenom = prompt("Veuillez saisir votre prénom");
-
-        let age = perseInt(prompt("Veuillez saisir votre age"));
-
-        let prenom = prompt("Veuillez saisir votre prénom"). toLowerCase();
-
-        console.log(typeof prenom);
-
-        if (prenom == prenomSemir && age === ageSemir) {
-
-            alert("Bienvenu Semir");
-            
-        } // je vérifie si mes deux conditions sont vrai
+        // let age = prompt('Veuillez saisir votre age');
+        // age = parseInt(age);
         
-        else {
-            alert ("Verifiez vos informations")
+       // let age = parseInt(prompt('Veuillez saisir votre age')); // je récupére l'âge de l'utilisateur
+    
+       // let prenom = prompt('Veuillez saisir votre prénom').toLowerCase(); // je récupére le prenom de l'uilisateur
+
+        //console.log(typeof prenom);
+
+
+        // if (prenom == prenomSemir && age == ageSemir ) { // je vérifie si mes deux conditions sont vrai // si VRAI
+
+        //     alert("Bienvenue Semir"); // j'affiche un message de bienvenue
             
+        // } else {
+
+        //     alert("Vérifiez vos informations");// sinon j'affiche un message d'erreur
+            
+        // }
+
+
+        // Exercice 5 
+        /* 
+            Déclarer trois tableaux :
+                tab1 qui contient 5 noms
+                tab2 qui contient 5 prenoms
+                tab3 qui contient 5 âges
+            Afficher en utilisant une boucle les noms et prénoms associés dans un document write
+        
+        */
+
+        let tab1 = ["Sarajlic","Smbatyan","Gransart","Embark","Pierrard"]; // 5 élément tab1.length = 5
+                        //0       1          2         3          4
+
+        let tab2 = ["Semir","Spartak","Axel","Leila","Paul"];
+        let tab3 = [100, 50, 75, 200, 5];
+
+
+        // for (let s=0; s < tab1.length ; s++) {
+
+        //     document.write(`${tab1[s]} ${tab2[s]} ${tab3[s] }<br>`);
+
+            // tour 1 : tab1[0]} $tab2[0]} $tab3[0]
+            // trour 2 : tab1[1]} $tab2[1]} $tab3[1]
+            // trour 3 : tab1[2]} $tab2[2]} $tab3[2]
+            // trour 4 : tab1[3]} $tab2[3]} $tab3[3]
+            // trour 5 : tab1[4]} $tab2[4]} $tab3[4]
+          
+        // }
+
+        // Deuxième façon de faire
+
+        // let tab4 = [tab1, tab2, tab3];
+
+        // for (let k=0; k < tab4[0].length; k++){
+
+        //     document.write(`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`);
+        // }
+
+        
+        // Exercice 6
+
+        /*
+            Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+            En utilisant la boucle for avec la condition if
+
+
+            Le manège démarre
+            C'est le tour numéro 1
+            C'est le tour numéro 2
+            ...
+            C'est le tour numéro 10
+            Le manège s'arrête
+        */
+
+        // for (let t = 1; t <= 10 ; t++) {
+            
+        //     if (t < 2) {
+                
+        //         document.write(" le manège démarre"+ "<br>")
+        //     }
+        //     if (t <= 10) { //10
+                
+        //         document.write("C'est le tour n°" + t + "<br>")
+        //     }
+        //     if (t > 9) { //10
+                
+        //         document.write(" le manège s'arrête")
+        //     }
+        // }
+
+        for ( let i = 0; i <= 11; i++ ) {
+
+            if (i == 11) {
+                document.write(`C'est fini, le tour de manège est <strong>terminé</strong> <br>`);         
+            }
+            else if (i == 0) {
+                document.write(`Le manège <strong>démarre</strong> <br>`);
+            }
+            else {
+                document.write(`C'est le tour de manège numéro <strong>${i}</strong> <br>`); 
+            }        
+        }
+        
+
+        // Exercice 7
+        /* 
+            Créer un script qui permet de :
+                - récupérer la moyenne de BAC à votre utilisateur
+                - vérifier si l'utilisateur a bien renseigner un nombre, 
+                si un nombre :
+                    => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+                    => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+                    => si la moyenne et entre 12 et 20 -> afficher Reçu avec mention ! :) 
+                    => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+                Si ce n'est pas un nombre :
+                    =>afficher  "Vous n\avez pas saisi de nombre !"   
+        */
+
+
+        let moyenne = prompt('Votre moyenne');
+
+        if (!isNaN(moyenne)) { // si un nombre 
+
+            if (moyenne >= 0 && moyenne < 10) {
+
+            document.write("tu es recalé");
+
+            } else if(moyenne >= 10 && moyenne <= 11) {
+
+            document.write("Tu passes, sans mention !");
+
+
+            }else if (moyenne >= 12 && moyenne <= 20) {
+
+            document.write("Reçu avec mention ! :)!");
+
+            }else if (moyenne < 0 || moyenne > 20) {
+
+            document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+
+            }
+        }else {
+
+            document.write( "Vous n\avez pas saisi de nombre !");
+
+        }
+      
+
+        if (isNaN(moyenne)) { // si un nombre 
+
+            document.write( "Vous n\avez pas saisi de nombre !");
+
+             
+        }else {
+
+                if (moyenne >= 0 && moyenne < 10) {
+
+            document.write("tu es recalé");
+
+            } else if(moyenne >= 10 && moyenne <= 11) {
+
+            document.write("Tu passes, sans mention !");
+
+
+            }else if (moyenne >= 12 && moyenne <= 20) {
+
+            document.write("Reçu avec mention ! :)!");
+
+            }else if (moyenne < 0 || moyenne > 20) {
+
+            document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+
         }
 
-       
+    }
 
+        
+
+        // Exercice 8
+        /* 
+
+            Créer un script qui permet de :
+                récuperer un nombre de l'utilsateur, 
+                le nombre doit être différent de 0 et positif
+                vérifier et afficher sur la page si ce nombre ainsi que ceux qui le suivent jusqu'au 10.
+                Si ce n'est pas un nombre :
+                    => afficher  "Vous n'avez pas saisi de nombre !"  
+                si un nombre :
+                    => si un nombre pair -> affiche " le nombre est pair"
+                    => si un nombre impair -> affiche " le nombre est impair"
+
+
+            créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le script vérifiera d'abord si le nombre est différent de zéro et s'il est positif. Ensuite, il affichera sur la page web si ce nombre est pair ou impair, ainsi que pour les neuf nombres suivants jusqu'à 10.
+            
+            
+        */
+
+
+        let nbr = prompt('Entrez un nombre');
+
+        if (isNaN(nbr)) {
+
+            
+            document.write("Vous n'avez pas saisi de nombre !");
+        }else {
+            if (nbr) {
+                document.write('c\'est un nombre');
+            }
+        }
+
+        //Exercice 9
+
+        // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+
+        //Exercice 10
+
+        /* 
+            Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
+            il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
+            Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+            il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
+        */
 
 
 
