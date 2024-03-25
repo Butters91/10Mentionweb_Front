@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les fonctions en JS</title>
+</head>
+<body>
+
+
+    <script>
+
+        // //-------------------
+        // // - Les fonctions
+        // //-------------------
+
+
+        /*
+            Un des grands principes en programmation est d'avoir un code DRY (Don't Repeat Yourself)
+            Les fonctions sont des blocs de code réutilisables et modifiables, à volonté qui peuvent être appelés pour effectuer une tâche spécifique. Elles sont définies à l'aide du mot-clé function     
+        */
+
+
+        
+        // //-------------------
+        // // - Syntaxe
+        // //-------------------
+
+        // Cette syntaxe définit une fonction nomée maFonction
+        function mafonction () { //Fonction nomées etre appelées en utillisant ce nom
+
+            // corps de la fonction
+
+        }
+
+
+        // Cette syntaxe définit une fonction anonyme et l'assigne à une variable nomée maFonction1
+        let mafonction = function() { // fonction anonyme
+
+        };
+
+        // Cette symtaxe est plus concise introduite dans EDNAScript 6 (ES6)
+        () => { // Fonction fléchées
+
+            // corps de la fonction
+
+        }
+
+
+          // //-------------------
+        // // - INITIALISATION
+        // //-------------------
+
+        function greetings (){ // Déclaration d'une fonction
+            document.write("Hello world <br>");
+
+        } 
+        greetings(); // je vais executer ma fonction et déclancher ses instructions
+
+        // Afin que notre fonction soit paramétrable, nous allons utiliser des paramétre.
+        // Des paramétres sont comme des variables / options, qui sont utiliséés dans la fonction, et ces paramétres sont fournirs en tant qu'arguments lors de l'appel de la fonction.
+
+        let prenom = prompt("Entrez votre prénom");
+
+        // function bonjour (){
+
+        //     document.write(`Bonjour ${prenom} <br>`);
+
+
+        // }
+        // bonjour(prenom);
+
+        // Vous pouve mettre autant de param'tres que nécessaire
+
+        let profession = prompt("Entrez votre profession");
+        function bonjour1(prenom, profession){
+
+            document.write(`je suis ${prenom}, je travaille ${profession} <br> `);
+
+
+        }
+        bonjour1(prenom, profession);
+
+
+
+    </script>
+    
+</body>
+</html>

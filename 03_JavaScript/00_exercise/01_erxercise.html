@@ -263,15 +263,46 @@ Nom du fichier : index.html
 
             
             document.write("Vous n'avez pas saisi de nombre !");
-        }else {
-            if (nbr) {
-                document.write('c\'est un nombre');
+
+        } else {
+
+          if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0) {
+
+            document.write("le nombre doit etre différent de 0 et positif");
+
+          } else {
+
+            while(nbr <- 10) {
+                if (nbr % 2 == 0 ) {
+                    document.write(`le nombre ${nbr}`)
+                }
+
+
             }
+          }
+
+
+
+
         }
 
         //Exercice 9
 
         // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+
+
+        let reponse = "";
+        let i = 1
+
+        while (reponse.toLowerCase () === "oui" || reponse.toLowerCase() === "non") {
+
+           reponse = prompt("Alors on joue au ni oui ni non ?!");
+           document.write( "la " + i + "Vous avez inséré " + reponse + "<br>");
+           i++
+
+        }
+
+        document.write("Désolé vous avez perdu ! ")
 
         //Exercice 10
 
@@ -281,6 +312,17 @@ Nom du fichier : index.html
             Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
             il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
         */
+
+        for (let i = 0; i < 20 ; i ++) {
+            if (i % 5 == 0 && i % 3 != 0){
+
+                document.write("Grala <br>");
+
+            }else if(i % 5 == 0 && i % i 3 ! = 0) {
+
+            }
+
+        }
 
 
 
